@@ -3,87 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Mercer | Computational Physicist</title>
+  <title>Abhineet Srivastava | Astrophysicist</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Syne (display) + Source Code Pro (mono) + Lato (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Code+Pro:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ===================== CANVAS BACKGROUND ===================== -->
-  <!-- Particle field rendered by script.js for a deep-space feel -->
   <canvas id="starfield"></canvas>
 
-  <!-- ===================== NAVIGATION ===================== -->
+  <!-- NAVIGATION -->
   <nav id="navbar">
-    <div class="nav-logo">
-      <!-- Greek letter Ψ as a nod to quantum physics -->
+    <a href="index.html" class="nav-logo">
       <span class="logo-psi">Ψ</span>
-      <span class="logo-text">A.Mercer</span>
-    </div>
+      <span class="logo-text">A.Srivastava</span>
+    </a>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#collab">Collab</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <!-- Hamburger for mobile -->
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile drawer -->
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-close" id="mobileClose">✕</button>
     <ul>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
-      <li><a href="#research" class="mobile-link">Research</a></li>
-      <li><a href="#collab" class="mobile-link">Collab</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="research.html" class="mobile-link">Research</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="cv.html" class="mobile-link">CV</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
     </ul>
   </div>
 
-  <!-- ===================== HERO SECTION ===================== -->
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
-      <!-- Subtle equation watermark in background -->
       <div class="hero-equation" aria-hidden="true">∇²Ψ + (2m/ℏ²)(E−V)Ψ = 0</div>
-
-      <div class="hero-badge">Physics · Computing · Data</div>
+      <div class="hero-badge">Black Holes · Astrophysics · Computation</div>
       <h1 class="hero-name">
-        <span class="name-first">Alex</span>
-        <span class="name-last">Mercer</span>
+        <span class="name-first">Abhineet</span>
+        <span class="name-last">Srivastava</span>
       </h1>
-      <p class="hero-title">Computational Physicist &amp; Scientific Developer</p>
+      <p class="hero-title">M.Sc. Physics · UPES Dehradun</p>
       <p class="hero-sub">
-        Building bridges between physical theory and numerical computation —
-        from black hole timing to spectral decomposition, I transform complex
-        equations into elegant, efficient code.
+        Probing the universe's most extreme objects — from disk-corona-jet connections
+        in stellar-mass black holes to stochastic dynamics of Brownian motion.
+        Bridging X-ray astronomy, numerical methods, and machine learning.
       </p>
-
-      <!-- CTA buttons -->
       <div class="hero-cta">
-        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-outline">
+        <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
           GitHub
         </a>
-        <a href="#" class="btn btn-outline">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Download CV
+        <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          LinkedIn
         </a>
-        <a href="#contact" class="btn btn-primary">
-          Get in Touch
+        <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Physics Library
         </a>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
       </div>
-
-      <!-- Scroll indicator -->
       <div class="scroll-hint">
         <span>Scroll to explore</span>
         <div class="scroll-arrow"></div>
@@ -91,86 +79,86 @@
     </div>
   </section>
 
-  <!-- ===================== ABOUT SECTION ===================== -->
+  <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
       <div class="section-label">01 / About</div>
       <h2 class="section-title">Background &amp; Interests</h2>
 
       <div class="about-grid">
-        <!-- Left: Bio text -->
         <div class="about-text">
           <p class="about-lead">
-            I am a Physics graduate with a deep focus on <em>Computational Physics</em>
-            and <em>Numerical Methods</em>, passionate about solving real-world scientific
-            problems through elegant computation.
+            I am an M.Sc. Physics student at <em>UPES, Dehradun</em>, driven by a passion for
+            <em>High Energy Astrophysics</em> and <em>Computational Physics</em>. My research
+            focuses on understanding the extreme environments around stellar-mass black holes.
           </p>
           <p>
-            My academic journey spans classical mechanics, electrodynamics, quantum
-            mechanics, and statistical physics — but my true excitement lives at the
-            intersection of physics and code. I enjoy designing algorithms that simulate
-            physical systems, analyze observational data, and visualize complex phenomena.
+            My work spans X-ray data analysis from the NuSTAR mission, stochastic dynamics
+            simulations using Monte Carlo methods, and machine learning applied to exoplanetary
+            data. I'm equally at home crafting Python pipelines for astronomical archives and
+            deriving analytical solutions with Green's functions.
           </p>
           <p>
-            Outside research, I contribute to open-source scientific tools, maintain a
-            collaborative computational physics library, and mentor peers in scientific
-            programming.
+            I co-founded the <strong>Horizon Science Society</strong> at UPES, organizing
+            workshops with ISRO scientists and field trips to astronomical observatories. I also
+            maintain an open-source <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" style="color:var(--clr-accent)">Computational Physics Library</a> for students and researchers.
           </p>
+          <div class="about-links">
+            <a href="research.html" class="btn btn-outline" style="font-size:0.8rem">View Research →</a>
+            <a href="projects.html" class="btn btn-outline" style="font-size:0.8rem">View Projects →</a>
+            <a href="cv.html" class="btn btn-outline" style="font-size:0.8rem">Full CV →</a>
+          </div>
         </div>
 
-        <!-- Right: Info cards -->
         <div class="about-cards">
-          <!-- Education -->
-          <div class="info-card">
+          <div class="info-card reveal">
             <div class="info-card-icon">🎓</div>
             <div>
               <h3>Education</h3>
               <ul class="info-list">
-                <li><strong>M.Sc. Physics</strong> — University of Science &amp; Technology, 2024</li>
-                <li><strong>B.Sc. Physics (Hons.)</strong> — National University, 2022</li>
-                <li>Dissertation: <em>Numerical Modelling of Astrophysical Phenomena</em></li>
+                <li><strong>M.Sc. Physics</strong> — UPES Dehradun <span class="tag tag--gold" style="margin-left:.4rem">76% (ongoing)</span></li>
+                <li><strong>B.Sc. Physics (Hons.)</strong> — UPES Dehradun <span class="tag" style="margin-left:.4rem">72.3%</span></li>
+                <li>Class XII CBSE — B.B.L. Public School, Bareilly <span class="tag" style="margin-left:.4rem">87.6%</span></li>
               </ul>
             </div>
           </div>
 
-          <!-- Research Interests -->
-          <div class="info-card">
+          <div class="info-card reveal">
             <div class="info-card-icon">🔭</div>
             <div>
               <h3>Research Interests</h3>
               <ul class="info-list">
-                <li>Astrophysics &amp; High-Energy Physics</li>
-                <li>Numerical Relativity &amp; Black Hole Dynamics</li>
-                <li>Spectroscopy &amp; Observational Data Analysis</li>
-                <li>Quantum Systems Simulation</li>
+                <li>Black Hole Accretion Physics</li>
+                <li>High Energy Astrophysics &amp; Radiative Processes</li>
+                <li>Exoplanet Detection &amp; Characterisation</li>
+                <li>Galaxy Formation, Dark Matter &amp; Dark Energy</li>
+                <li>Computational Astrophysics &amp; ML in Astronomy</li>
               </ul>
             </div>
           </div>
 
-          <!-- Computational Interests -->
-          <div class="info-card">
+          <div class="info-card reveal">
             <div class="info-card-icon">⚙️</div>
             <div>
               <h3>Computational Focus</h3>
               <ul class="info-list">
-                <li>Algorithm design for physical systems</li>
-                <li>High-performance scientific computing</li>
-                <li>Finite element &amp; finite difference methods</li>
-                <li>Monte Carlo &amp; stochastic simulations</li>
+                <li>X-ray timing &amp; spectral analysis</li>
+                <li>Monte Carlo stochastic simulations</li>
+                <li>Machine learning for astronomical data</li>
+                <li>Ion beam &amp; SRIM simulations</li>
               </ul>
             </div>
           </div>
 
-          <!-- Programming Experience -->
-          <div class="info-card">
-            <div class="info-card-icon">💻</div>
+          <div class="info-card reveal">
+            <div class="info-card-icon">🏆</div>
             <div>
-              <h3>Scientific Programming</h3>
+              <h3>Training &amp; Schools</h3>
               <ul class="info-list">
-                <li>3+ years Python (NumPy, SciPy, Matplotlib)</li>
-                <li>C++ for performance-critical simulations</li>
-                <li>LaTeX for scientific typesetting</li>
-                <li>Git/GitHub for version control &amp; collaboration</li>
+                <li>Summer School on Gravitational-Wave Astronomy</li>
+                <li>ICTS-TIFR, Bengaluru — July 2025</li>
+                <li>Astronomy: Exploring Time and Space (online)</li>
+                <li>Python for Data Science (online)</li>
               </ul>
             </div>
           </div>
@@ -179,634 +167,253 @@
     </div>
   </section>
 
-  <!-- ===================== SKILLS SECTION ===================== -->
+  <!-- SKILLS -->
   <section id="skills" class="section section-alt">
     <div class="container">
       <div class="section-label">02 / Skills</div>
-      <h2 class="section-title">Technical Expertise</h2>
-      <p class="section-sub">
-        A curated stack built for scientific computation, data analysis, and research.
-      </p>
+      <h2 class="section-title">Technical Toolkit</h2>
+      <p class="section-sub">Languages, tools, and platforms I use daily in research and computation.</p>
 
       <div class="skills-grid">
-
-        <!-- Each skill item has a label, category colour, and animated fill bar -->
-
-        <!-- LANGUAGES -->
-        <div class="skill-group">
-          <h3 class="skill-group-title">Languages</h3>
-
-          <div class="skill-item">
-            <div class="skill-header">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Programming Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
               <span class="skill-name">Python</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:92%"></div></div>
               <span class="skill-pct">92%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="92" style="--pct:92%"></div></div>
-            <p class="skill-desc">NumPy · SciPy · Matplotlib · Pandas · Astropy</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
+            <div class="skill-bar-item">
               <span class="skill-name">C++</span>
-              <span class="skill-pct">70%</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:72%"></div></div>
+              <span class="skill-pct">72%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="70" style="--pct:70%"></div></div>
-            <p class="skill-desc">Numerical solvers · Simulation kernels · STL</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Git / GitHub</span>
+            <div class="skill-bar-item">
+              <span class="skill-name">Fortran</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:60%"></div></div>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-name">MATLAB / Scilab</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:68%"></div></div>
+              <span class="skill-pct">68%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-name">LaTeX</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:85%"></div></div>
               <span class="skill-pct">85%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="85" style="--pct:85%"></div></div>
-            <p class="skill-desc">Version control · CI workflows · Collaboration</p>
           </div>
         </div>
 
-        <!-- NUMERICAL METHODS -->
-        <div class="skill-group">
-          <h3 class="skill-group-title">Numerical Methods</h3>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Root Finding</span>
-              <span class="skill-pct">90%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="90" style="--pct:90%"></div></div>
-            <p class="skill-desc">Bisection · Newton-Raphson · Secant method</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Numerical Integration</span>
-              <span class="skill-pct">88%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="88" style="--pct:88%"></div></div>
-            <p class="skill-desc">Gaussian quadrature · Simpson's · Runge-Kutta</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Differential Equations</span>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="85" style="--pct:85%"></div></div>
-            <p class="skill-desc">ODE/PDE solvers · Boundary value problems</p>
-          </div>
-        </div>
-
-        <!-- MATHEMATICS -->
-        <div class="skill-group">
-          <h3 class="skill-group-title">Mathematics</h3>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Linear Algebra</span>
-              <span class="skill-pct">88%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="88" style="--pct:88%"></div></div>
-            <p class="skill-desc">Matrix decomposition · Eigenvalue problems · SVD</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Statistics &amp; Probability</span>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Astronomy &amp; Analysis Tools</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span class="skill-name">HEASARC / HEASoft</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:80%"></div></div>
               <span class="skill-pct">80%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="80" style="--pct:80%"></div></div>
-            <p class="skill-desc">Bayesian inference · Monte Carlo · Error analysis</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Fourier Analysis</span>
-              <span class="skill-pct">78%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="78" style="--pct:78%"></div></div>
-            <p class="skill-desc">FFT · Signal processing · Power spectra</p>
-          </div>
-        </div>
-
-        <!-- PHYSICS DOMAINS -->
-        <div class="skill-group">
-          <h3 class="skill-group-title">Physics Domains</h3>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Data Analysis</span>
-              <span class="skill-pct">87%</span>
-            </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="87" style="--pct:87%"></div></div>
-            <p class="skill-desc">Curve fitting · Feature extraction · Visualisation</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Astrophysics</span>
+            <div class="skill-bar-item">
+              <span class="skill-name">TOPCAT</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:82%"></div></div>
               <span class="skill-pct">82%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="82" style="--pct:82%"></div></div>
-            <p class="skill-desc">Timing analysis · Orbital mechanics · X-ray binaries</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Spectroscopy</span>
-              <span class="skill-pct">76%</span>
+            <div class="skill-bar-item">
+              <span class="skill-name">Aladin / iSpec</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:70%"></div></div>
+              <span class="skill-pct">70%</span>
             </div>
-            <div class="skill-bar"><div class="skill-fill" data-pct="76" style="--pct:76%"></div></div>
-            <p class="skill-desc">Line identification · Radial velocity · Abundance</p>
+            <div class="skill-bar-item">
+              <span class="skill-name">Gnuplot / Origin</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:74%"></div></div>
+              <span class="skill-pct">74%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-name">SRIM</span>
+              <div class="skill-track"><div class="skill-fill" style="--pct:65%"></div></div>
+              <span class="skill-pct">65%</span>
+            </div>
           </div>
         </div>
 
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">Software &amp; Platforms</h3>
+          <div class="tags-wrap">
+            <span class="tag">GitHub</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Overleaf</span>
+            <span class="tag">MS Suite</span>
+            <span class="tag">NuSTAR Data</span>
+            <span class="tag">NASA ADS</span>
+            <span class="tag">Monte Carlo</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">Green's Functions</span>
+            <span class="tag">Power Density Spectra</span>
+            <span class="tag">Light Curves</span>
+            <span class="tag">ECR Ion Source</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== PROJECTS SECTION ===================== -->
-  <section id="projects" class="section">
+  <!-- FEATURED RESEARCH PREVIEW -->
+  <section id="research-preview" class="section">
     <div class="container">
-      <div class="section-label">03 / Projects</div>
-      <h2 class="section-title">Computational Projects</h2>
-      <p class="section-sub">
-        Open-source implementations of numerical methods and physics analyses.
-      </p>
+      <div class="section-label">03 / Research</div>
+      <h2 class="section-title">Current Research</h2>
+      <p class="section-sub">Ongoing work at the frontier of high-energy astrophysics.</p>
 
       <div class="projects-grid">
-
-        <!-- Project Card 1 -->
-        <article class="project-card">
-          <div class="project-img" aria-label="Root Finding Methods">
-            <!-- SVG placeholder that looks like a function graph -->
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#0a0e1a"/>
-              <!-- Grid lines -->
-              <line x1="0" y1="80" x2="300" y2="80" stroke="#1e2d4a" stroke-width="1"/>
-              <line x1="150" y1="0" x2="150" y2="160" stroke="#1e2d4a" stroke-width="1"/>
-              <!-- Curve: a cubic polynomial -->
-              <path d="M20,140 C60,130 80,20 120,60 C160,100 180,30 220,50 C250,65 270,90 280,80" fill="none" stroke="#00d4aa" stroke-width="2.5"/>
-              <!-- Root markers -->
-              <circle cx="88" cy="80" r="5" fill="none" stroke="#e8c84a" stroke-width="2"/>
-              <circle cx="189" cy="80" r="5" fill="none" stroke="#e8c84a" stroke-width="2"/>
-              <!-- Labels -->
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">f(x) = x³ − 2x + 0.5</text>
-              <text x="200" y="20" font-family="monospace" font-size="9" fill="#00d4aa">Roots found</text>
-            </svg>
+        <div class="project-card featured reveal">
+          <div class="project-card-header">
+            <span class="tag tag--gold">M.Sc. Thesis · Ongoing</span>
+            <span class="project-year">Aug 2025 – Present</span>
           </div>
-          <div class="project-body">
+          <h3 class="project-title">Disk-Corona-Jet Connections in Stellar-Mass Black Holes</h3>
+          <p class="project-desc">
+            Using NuSTAR X-ray data to analyse light curves, time lags, and power density spectra
+            of stellar-mass black holes — probing the physical connection between the accretion
+            disk, corona, and jet.
+          </p>
+          <div class="project-footer">
             <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
+              <span class="tag">NuSTAR</span>
+              <span class="tag">X-ray Timing</span>
+              <span class="tag">HEASARC</span>
+              <span class="tag">Python</span>
             </div>
-            <h3 class="project-title">Root Finding Methods</h3>
-            <p class="project-desc">
-              Comparative implementation of Bisection, Newton-Raphson, and Secant
-              methods with convergence analysis, error bounds, and interactive
-              visualisation of iteration steps.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
+            <a href="research.html" class="btn btn-primary" style="font-size:0.78rem;padding:.5rem 1rem;">Details →</a>
           </div>
-        </article>
+          <div class="project-advisors">
+            <span>Supervisors: Dr. Arka Chatterjee (UPES) · Dr. Sudip K. Garain (IISER Kolkata)</span>
+          </div>
+        </div>
 
-        <!-- Project Card 2 -->
-        <article class="project-card">
-          <div class="project-img" aria-label="Numerical Integration">
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#0a0e1a"/>
-              <!-- Trapezoid fills -->
-              <polygon points="30,120 60,80 90,70 120,90 150,60 180,75 210,65 240,100 270,120" fill="#0d3b52" stroke="none"/>
-              <polygon points="30,120 60,120 60,80 30,120" fill="#0d4a60"/>
-              <polygon points="60,120 90,120 90,70 60,80" fill="#0d4a60"/>
-              <polygon points="90,120 120,120 120,90 90,70" fill="#0d4a60"/>
-              <polygon points="120,120 150,120 150,60 120,90" fill="#0d4a60"/>
-              <!-- Curve -->
-              <path d="M30,120 C60,80 90,70 120,90 C150,60 180,75 210,65 C240,100 270,120 270,120" fill="none" stroke="#00d4aa" stroke-width="2.5"/>
-              <!-- Baseline -->
-              <line x1="20" y1="120" x2="280" y2="120" stroke="#1e2d4a" stroke-width="1"/>
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">∫f(x)dx ≈ Σ trapezoids</text>
-              <text x="200" y="20" font-family="monospace" font-size="9" fill="#e8c84a">error: 1.2×10⁻⁶</text>
-            </svg>
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">External Project · Ongoing</span>
+            <span class="project-year">Aug 2025 – Present</span>
           </div>
-          <div class="project-body">
+          <h3 class="project-title">Stochastic Dynamics of Brownian Motion</h3>
+          <p class="project-desc">
+            Investigating Brownian motion dynamics in classical non-conservative systems using
+            Green's functions for analytical behaviour and Monte Carlo simulations for
+            stochastic modeling.
+          </p>
+          <div class="project-footer">
             <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">SciPy</span><span class="tag">Jupyter</span>
+              <span class="tag">Green's Functions</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">Python</span>
             </div>
-            <h3 class="project-title">Numerical Integration Suite</h3>
-            <p class="project-desc">
-              Trapezoidal, Simpson's, Gaussian quadrature, and adaptive integration
-              routines with rigorous error analysis and comparison to analytical
-              solutions for benchmark integrals.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
+            <a href="research.html#brownian" class="btn btn-outline" style="font-size:0.78rem;padding:.5rem 1rem;">Details →</a>
           </div>
-        </article>
+          <div class="project-advisors">
+            <span>Collaborator: Dr. Raju Roychowdhury (University of Delhi)</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- Project Card 3 -->
-        <article class="project-card">
-          <div class="project-img" aria-label="ODE Solver">
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#0a0e1a"/>
-              <!-- Phase portrait lines -->
-              <path d="M30,140 C50,100 70,20 90,80 C110,140 130,60 150,80 C170,100 190,40 210,70 C230,100 250,60 270,80" fill="none" stroke="#00d4aa" stroke-width="2" stroke-dasharray="4,2"/>
-              <path d="M30,100 C60,60 90,100 120,60 C150,20 180,80 210,50 C240,20 260,60 270,50" fill="none" stroke="#5577ff" stroke-width="2" stroke-dasharray="4,2"/>
-              <!-- Arrow markers (manual) -->
-              <circle cx="90" cy="80" r="3" fill="#e8c84a"/>
-              <circle cx="150" cy="80" r="3" fill="#e8c84a"/>
-              <circle cx="210" cy="70" r="3" fill="#e8c84a"/>
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">dy/dt = f(t, y) — RK4</text>
-            </svg>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Matplotlib</span>
-            </div>
-            <h3 class="project-title">Differential Equation Solvers</h3>
-            <p class="project-desc">
-              ODE and PDE solvers including Euler, RK2, RK4, and adaptive step-size
-              control. Applied to pendulum dynamics, Lotka-Volterra, and heat
-              diffusion with phase-portrait visualisation.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 4 -->
-        <article class="project-card">
-          <div class="project-img" aria-label="Linear Algebra Solver">
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#0a0e1a"/>
-              <!-- Matrix grid visual -->
-              <g transform="translate(30, 20)">
-                <rect x="0" y="0" width="50" height="50" fill="#112233" stroke="#1e3a5f" stroke-width="1"/>
-                <rect x="55" y="0" width="50" height="50" fill="#0d2a40" stroke="#1e3a5f" stroke-width="1"/>
-                <rect x="110" y="0" width="50" height="50" fill="#112233" stroke="#1e3a5f" stroke-width="1"/>
-                <rect x="0" y="55" width="50" height="50" fill="#0d2a40" stroke="#1e3a5f" stroke-width="1"/>
-                <rect x="55" y="55" width="50" height="50" fill="#00d4aa22" stroke="#00d4aa55" stroke-width="1.5"/>
-                <rect x="110" y="55" width="50" height="50" fill="#0d2a40" stroke="#1e3a5f" stroke-width="1"/>
-                <!-- Values -->
-                <text x="25" y="30" font-family="monospace" font-size="14" fill="#5577ff" text-anchor="middle">3</text>
-                <text x="80" y="30" font-family="monospace" font-size="14" fill="#5577ff" text-anchor="middle">-1</text>
-                <text x="135" y="30" font-family="monospace" font-size="14" fill="#5577ff" text-anchor="middle">2</text>
-                <text x="25" y="85" font-family="monospace" font-size="14" fill="#5577ff" text-anchor="middle">1</text>
-                <text x="80" y="85" font-family="monospace" font-size="14" fill="#00d4aa" text-anchor="middle" font-weight="bold">4</text>
-                <text x="135" y="85" font-family="monospace" font-size="14" fill="#5577ff" text-anchor="middle">-2</text>
-              </g>
-              <text x="200" y="80" font-family="monospace" font-size="11" fill="#e8c84a">Ax = b</text>
-              <text x="195" y="98" font-family="monospace" font-size="9" fill="#4a6080">LU decomp.</text>
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">Gauss · LU · Cholesky · Jacobi</text>
-            </svg>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">C++</span>
-            </div>
-            <h3 class="project-title">Linear Algebra Solvers</h3>
-            <p class="project-desc">
-              From-scratch implementations of Gaussian elimination, LU decomposition,
-              Cholesky factorisation, and iterative solvers (Jacobi, Gauss-Seidel)
-              with benchmarking against LAPACK routines.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 5 -->
-        <article class="project-card project-card--featured">
-          <div class="project-img" aria-label="Black Hole Timing Analysis">
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#050812"/>
-              <!-- Accretion disk rings -->
-              <ellipse cx="150" cy="90" rx="110" ry="30" fill="none" stroke="#e8621a" stroke-width="1" opacity="0.4"/>
-              <ellipse cx="150" cy="88" rx="85" ry="22" fill="none" stroke="#e8861a" stroke-width="1.5" opacity="0.6"/>
-              <ellipse cx="150" cy="86" rx="60" ry="15" fill="none" stroke="#e8c84a" stroke-width="2" opacity="0.8"/>
-              <!-- Black hole core -->
-              <circle cx="150" cy="80" r="22" fill="black" stroke="#e8c84a" stroke-width="1.5"/>
-              <circle cx="150" cy="80" r="10" fill="#050812"/>
-              <!-- Jet -->
-              <line x1="150" y1="58" x2="150" y2="10" stroke="#5577ff" stroke-width="2" opacity="0.7"/>
-              <line x1="150" y1="102" x2="150" y2="150" stroke="#5577ff" stroke-width="2" opacity="0.4"/>
-              <!-- Timing pulses on the side -->
-              <g transform="translate(235, 30)">
-                <rect x="0" y="0" width="3" height="15" fill="#00d4aa"/>
-                <rect x="8" y="5" width="3" height="10" fill="#00d4aa"/>
-                <rect x="16" y="0" width="3" height="18" fill="#00d4aa"/>
-                <rect x="24" y="7" width="3" height="8" fill="#00d4aa"/>
-                <rect x="32" y="2" width="3" height="14" fill="#00d4aa"/>
-              </g>
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">X-ray timing · Period folding · χ² analysis</text>
-            </svg>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag--gold">Featured</span>
-              <span class="tag">Python</span><span class="tag">Astropy</span><span class="tag">XSPEC</span>
-            </div>
-            <h3 class="project-title">Black Hole Timing Analysis</h3>
-            <p class="project-desc">
-              Pipeline for analysing X-ray timing data from black hole X-ray binaries.
-              Implements period folding, epoch-folding, power spectral density, and
-              quasi-periodic oscillation (QPO) detection using χ² statistics.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project Card 6 -->
-        <article class="project-card project-card--featured">
-          <div class="project-img" aria-label="Spectroscopy Analysis">
-            <svg viewBox="0 0 300 160" xmlns="http://www.w3.org/2000/svg">
-              <rect width="300" height="160" fill="#0a0e1a"/>
-              <!-- Spectrum background gradient -->
-              <defs>
-                <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%"   stop-color="#6600cc" stop-opacity="0.3"/>
-                  <stop offset="20%"  stop-color="#0044ff" stop-opacity="0.3"/>
-                  <stop offset="40%"  stop-color="#00ccaa" stop-opacity="0.3"/>
-                  <stop offset="60%"  stop-color="#44dd00" stop-opacity="0.3"/>
-                  <stop offset="80%"  stop-color="#ffcc00" stop-opacity="0.3"/>
-                  <stop offset="100%" stop-color="#ff4400" stop-opacity="0.3"/>
-                </linearGradient>
-              </defs>
-              <rect x="20" y="40" width="260" height="80" fill="url(#spectrum)"/>
-              <!-- Continuum line -->
-              <path d="M20,90 C80,88 140,92 200,89 C230,88 260,90 280,89" fill="none" stroke="#aaaacc" stroke-width="1.5"/>
-              <!-- Absorption lines -->
-              <line x1="65"  y1="40" x2="65"  y2="120" stroke="#5577ff" stroke-width="2.5" opacity="0.8"/>
-              <line x1="110" y1="40" x2="110" y2="120" stroke="#00d4aa" stroke-width="3" opacity="0.9"/>
-              <line x1="155" y1="40" x2="155" y2="120" stroke="#5577ff" stroke-width="2" opacity="0.7"/>
-              <line x1="200" y1="40" x2="200" y2="120" stroke="#e8c84a" stroke-width="3.5" opacity="0.9"/>
-              <line x1="240" y1="40" x2="240" y2="120" stroke="#ff7733" stroke-width="2" opacity="0.7"/>
-              <!-- Labels -->
-              <text x="60"  y="135" font-family="monospace" font-size="8" fill="#5577ff" text-anchor="middle">Hβ</text>
-              <text x="105" y="135" font-family="monospace" font-size="8" fill="#00d4aa" text-anchor="middle">Hα</text>
-              <text x="150" y="135" font-family="monospace" font-size="8" fill="#5577ff" text-anchor="middle">He I</text>
-              <text x="195" y="135" font-family="monospace" font-size="8" fill="#e8c84a" text-anchor="middle">Na D</text>
-              <text x="238" y="135" font-family="monospace" font-size="8" fill="#ff7733" text-anchor="middle">Ca II</text>
-              <text x="10" y="155" font-family="monospace" font-size="10" fill="#4a6080">Stellar absorption spectrum — radial velocity fit</text>
-            </svg>
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag--gold">Featured</span>
-              <span class="tag">Python</span><span class="tag">Astropy</span><span class="tag">PySpecKit</span>
-            </div>
-            <h3 class="project-title">Stellar Spectroscopy Pipeline</h3>
-            <p class="project-desc">
-              Automated pipeline for stellar spectral analysis: continuum normalisation,
-              absorption line identification, Gaussian fitting, radial velocity
-              measurement, and elemental abundance determination.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener" class="proj-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-                View on GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="research.html" class="btn btn-outline">View All Research →</a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== RESEARCH SECTION ===================== -->
-  <section id="research" class="section section-alt">
+  <!-- COMPUTATIONAL PHYSICS LIBRARY -->
+  <section id="library" class="section section-alt">
     <div class="container">
-      <div class="section-label">04 / Research</div>
-      <h2 class="section-title">Research Experience</h2>
-
-      <div class="research-layout">
-        <!-- Timeline items -->
-        <div class="research-timeline">
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2023 – 2024</span>
-              <h3>M.Sc. Dissertation</h3>
-              <p class="tl-institution">University of Science &amp; Technology · Supervisor: Dr. R. Sharma</p>
-              <p>
-                <em>Numerical Modelling of Quasi-Periodic Oscillations in Black Hole X-ray Binaries.</em>
-                Developed a Python pipeline for timing analysis of archival RXTE/XMM-Newton
-                data, detecting QPOs in the 1–100 Hz range and constraining inner disc radii
-                through Lense-Thirring precession models.
-              </p>
-              <div class="tl-tags">
-                <span class="tag">Astrophysics</span>
-                <span class="tag">Timing Analysis</span>
-                <span class="tag">Python</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2022 – 2023</span>
-              <h3>Research Intern</h3>
-              <p class="tl-institution">Institute of Astrophysics · Dr. K. Patel's Group</p>
-              <p>
-                Contributed to a spectroscopic survey of OB-type stars. Reduced raw
-                echelle spectra, measured radial velocities, and identified chemical
-                peculiarities in a sample of 40 stellar spectra using automated
-                line-profile fitting routines written in Python.
-              </p>
-              <div class="tl-tags">
-                <span class="tag">Spectroscopy</span>
-                <span class="tag">Data Reduction</span>
-                <span class="tag">SciPy</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2021 – 2022</span>
-              <h3>Undergraduate Project</h3>
-              <p class="tl-institution">National University · Computational Physics Lab</p>
-              <p>
-                Implemented finite-difference solvers for the 2D heat equation and
-                Schrödinger equation in an infinite square well, comparing numerical
-                eigenvalues to analytical solutions and visualising probability
-                density evolution.
-              </p>
-              <div class="tl-tags">
-                <span class="tag">PDE Solvers</span>
-                <span class="tag">Quantum Mechanics</span>
-                <span class="tag">C++</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Publications placeholder -->
-        <div class="publications-panel">
-          <h3 class="pub-title">Publications</h3>
-          <div class="pub-card">
-            <span class="pub-status pub-status--prep">In Preparation</span>
-            <p class="pub-ref">
-              Mercer A., Sharma R., et al. (2025). <em>Quasi-Periodic Oscillations in
-              the Black Hole Binary GRS 1915+105: A Lense-Thirring Precession Model.</em>
-              Monthly Notices of the Royal Astronomical Society (submitted).
-            </p>
-          </div>
-          <div class="pub-card">
-            <span class="pub-status pub-status--conf">Conference</span>
-            <p class="pub-ref">
-              Mercer A. (2024). <em>Automated X-ray Timing Pipelines for RXTE Data.</em>
-              Poster presentation, National Astronomy Meeting 2024.
-            </p>
-          </div>
-          <div class="pub-card pub-card--placeholder">
-            <span class="pub-status pub-status--future">Upcoming</span>
-            <p class="pub-ref">Future publications from ongoing spectroscopy survey will appear here.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== COLLABORATIVE REPO SECTION ===================== -->
-  <section id="collab" class="section collab-section">
-    <div class="container">
-      <div class="section-label">05 / Open Source</div>
-      <h2 class="section-title">Collaborative Repository</h2>
+      <div class="section-label">04 / Open Source</div>
+      <h2 class="section-title">Computational Physics Library</h2>
       <p class="section-sub">
-        A shared, community-driven library of computational physics implementations,
-        open to contributors from across the scientific community.
+        An open, community-driven collection of numerical methods, physics simulators,
+        and data analysis tools — built for students and researchers.
       </p>
 
-      <div class="collab-card">
+      <div class="collab-card reveal">
         <div class="collab-header">
-          <!-- Repository icon -->
           <svg class="repo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
             <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
           </svg>
           <div>
-            <h3 class="repo-name">compphys-library</h3>
-            <p class="repo-desc">A curated, open-source library of numerical methods, physics simulators, and data analysis tools for students and researchers.</p>
+            <h3 class="repo-name">computational-physics-library</h3>
+            <p class="repo-desc">
+              A curated open-source library of numerical methods, physics simulators,
+              and data analysis tools. Maintained by Abhineet Srivastava and open to
+              contributions from the scientific community.
+            </p>
           </div>
         </div>
 
-        <!-- Repo stats -->
-        <div class="repo-stats">
-          <div class="stat"><span class="stat-num">12</span><span class="stat-label">Modules</span></div>
-          <div class="stat"><span class="stat-num">6</span><span class="stat-label">Contributors</span></div>
-          <div class="stat"><span class="stat-num">48</span><span class="stat-label">Stars</span></div>
-          <div class="stat"><span class="stat-num">MIT</span><span class="stat-label">License</span></div>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin:1.5rem 0;">
+          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Visit Website
+          </a>
+          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            View on GitHub
+          </a>
         </div>
 
-        <!-- Contributors -->
-        <div class="contributors">
-          <h4>Contributors</h4>
-          <div class="contributor-list">
-            <div class="contributor">
-              <div class="avatar avatar--you">AM</div>
-              <span>Alex Mercer</span>
-              <span class="contrib-role">Maintainer</span>
-            </div>
-            <div class="contributor">
-              <div class="avatar">SR</div>
-              <span>Samira Reza</span>
-              <span class="contrib-role">Numerical Methods</span>
-            </div>
-            <div class="contributor">
-              <div class="avatar">JL</div>
-              <span>Jonas Linde</span>
-              <span class="contrib-role">C++ Kernels</span>
-            </div>
-            <div class="contributor">
-              <div class="avatar">PK</div>
-              <span>Priya Kulkarni</span>
-              <span class="contrib-role">Data Analysis</span>
-            </div>
-            <div class="contributor">
-              <div class="avatar">TW</div>
-              <span>Tao Wei</span>
-              <span class="contrib-role">ODE Solvers</span>
-            </div>
-            <div class="contributor">
-              <div class="avatar">MB</div>
-              <span>Mateus Borges</span>
-              <span class="contrib-role">Visualisation</span>
-            </div>
-          </div>
+        <div class="library-embed-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" width="20" height="20"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span>Explore interactive physics notebooks, numerical solvers, and astrophysics tools — all open source.</span>
         </div>
-
-        <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:2rem;display:inline-flex;align-items:center;gap:.5rem;">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-          Visit Repository
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CONTACT SECTION ===================== -->
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <div class="container">
-      <div class="section-label">06 / Contact</div>
+      <div class="section-label">05 / Contact</div>
       <h2 class="section-title">Get In Touch</h2>
       <p class="section-sub">
-        Open to research collaborations, scientific computing roles, and data analyst positions.
+        Open to research collaborations, internships, and scientific computing discussions.
       </p>
 
       <div class="contact-grid">
-        <!-- Contact links -->
         <div class="contact-links">
-          <a href="mailto:alex.mercer@example.com" class="contact-item">
+          <a href="mailto:abhixneet@gmail.com" class="contact-item reveal">
             <div class="contact-icon">✉</div>
             <div>
               <span class="contact-type">Email</span>
-              <span class="contact-value">alex.mercer@example.com</span>
+              <span class="contact-value">abhixneet@gmail.com</span>
             </div>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="contact-item reveal">
             <div class="contact-icon">
               <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
             </div>
             <div>
               <span class="contact-type">GitHub</span>
-              <span class="contact-value">github.com/alexmercer</span>
+              <span class="contact-value">github.com/sabhineet</span>
             </div>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item">
-            <div class="contact-icon">in</div>
+          <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="contact-item reveal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </div>
             <div>
               <span class="contact-type">LinkedIn</span>
-              <span class="contact-value">linkedin.com/in/alexmercer</span>
+              <span class="contact-value">linkedin.com/in/abhineet-srivastava-</span>
+            </div>
+          </a>
+          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="contact-item reveal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <span class="contact-type">Physics Library</span>
+              <span class="contact-value">sabhineet.github.io/computational-physics-library</span>
             </div>
           </a>
         </div>
 
-        <!-- Contact form -->
         <div class="contact-form-wrap">
           <div class="contact-form">
             <div class="form-group">
@@ -819,9 +426,8 @@
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Your message…"></textarea>
+              <textarea id="message" rows="5" placeholder="Research collaboration, questions…"></textarea>
             </div>
-            <!-- Button triggers a JS confirmation -->
             <button class="btn btn-primary" id="sendBtn" style="width:100%;justify-content:center;">Send Message</button>
             <div id="formFeedback" class="form-feedback"></div>
           </div>
@@ -830,22 +436,27 @@
     </div>
   </section>
 
-  <!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-logo">
         <span class="logo-psi">Ψ</span>
-        <span class="logo-text">Alex Mercer</span>
+        <span class="logo-text">Abhineet Srivastava</span>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
       </div>
       <p class="footer-copy">
-        © 2025 Alex Mercer · Built with HTML, CSS &amp; JavaScript ·
-        <span class="footer-eq" aria-hidden="true">E = mc²</span>
+        © 2025 Abhineet Srivastava · UPES Dehradun ·
+        <span class="footer-eq" aria-hidden="true">Ṁ = 4πr²ρv</span>
       </p>
-      <p class="footer-note">Open to research collaborations &amp; scientific computing roles.</p>
+      <p class="footer-note">Open to research collaborations &amp; astrophysics discussions.</p>
     </div>
   </footer>
 
-  <!-- Main JS file -->
   <script src="script.js"></script>
 </body>
 </html>

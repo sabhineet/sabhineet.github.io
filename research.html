@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Abhineet Srivastava</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Code+Pro:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-psi">Ψ</span>
+      <span class="logo-text">A.Srivastava</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="research.html" class="mobile-link">Research</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="cv.html" class="mobile-link">CV</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="section-label">Research</div>
+        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.8rem)">Academic Research</h1>
+        <p class="section-sub" style="max-width:640px">
+          From NuSTAR X-ray observations of black holes to stochastic simulations
+          and machine learning on exoplanetary archives.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENT RESEARCH -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">01 / Current Work</div>
+      <h2 class="section-title">Ongoing Projects</h2>
+
+      <!-- MSc Thesis -->
+      <div id="nustar" class="research-card featured-research reveal">
+        <div class="research-card-header">
+          <div class="research-meta">
+            <span class="tag tag--gold">M.Sc. Thesis</span>
+            <span class="research-period">Aug 2025 – Present</span>
+            <span class="research-location">UPES, Dehradun</span>
+          </div>
+          <div class="research-status active-status">
+            <span class="pulse-dot"></span> Active
+          </div>
+        </div>
+
+        <h3 class="research-title">
+          Decoding Disk-Corona-Jet Connections of Stellar Mass Black Holes
+          through Timing and Spectral Analysis
+        </h3>
+
+        <div class="research-advisors">
+          <div class="advisor">
+            <span class="advisor-label">Supervisor</span>
+            <span class="advisor-name">Dr. Arka Chatterjee</span>
+            <span class="advisor-affil">Assistant Professor, UPES Dehradun</span>
+          </div>
+          <div class="advisor">
+            <span class="advisor-label">Co-Supervisor</span>
+            <span class="advisor-name">Dr. Sudip K. Garain</span>
+            <span class="advisor-affil">IISER Kolkata</span>
+          </div>
+        </div>
+
+        <div class="research-body">
+          <div class="research-description">
+            <h4>Overview</h4>
+            <p>
+              Stellar-mass black holes in X-ray binary systems are nature's laboratories for
+              studying extreme gravity, accretion, and relativistic jets. This thesis probes
+              the physical coupling between the three key structural components: the accretion
+              disk, the X-ray emitting corona, and the relativistic jet.
+            </p>
+            <h4>Methodology</h4>
+            <ul class="research-list">
+              <li>Analysing archival and new X-ray data from the <strong>NuSTAR</strong> mission</li>
+              <li>Extracting and analysing <strong>light curves</strong> for variability characterisation</li>
+              <li>Computing <strong>time lag spectra</strong> between soft and hard X-ray bands</li>
+              <li>Constructing <strong>Power Density Spectra (PDS)</strong> to study quasi-periodic oscillations</li>
+              <li>Connecting timing signatures to physical disk-corona-jet geometry</li>
+            </ul>
+            <h4>Goals</h4>
+            <p>
+              To establish observational constraints on how energy and matter flow between
+              the disk, corona, and jet in stellar-mass black hole binaries, potentially
+              resolving long-standing questions about jet launching mechanisms.
+            </p>
+          </div>
+          <div class="research-tools">
+            <h4>Tools &amp; Methods</h4>
+            <div class="tags-wrap">
+              <span class="tag">NuSTAR</span>
+              <span class="tag">HEASARC</span>
+              <span class="tag">HEASoft</span>
+              <span class="tag">Python</span>
+              <span class="tag">Astropy</span>
+              <span class="tag">X-ray Timing</span>
+              <span class="tag">Spectral Analysis</span>
+              <span class="tag">Power Density Spectra</span>
+              <span class="tag">Light Curves</span>
+              <span class="tag">Time Lag Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- External Brownian Project -->
+      <div id="brownian" class="research-card reveal">
+        <div class="research-card-header">
+          <div class="research-meta">
+            <span class="tag">External Project</span>
+            <span class="research-period">Aug 2025 – Present</span>
+            <span class="research-location">University of Delhi</span>
+          </div>
+          <div class="research-status active-status">
+            <span class="pulse-dot"></span> Active
+          </div>
+        </div>
+
+        <h3 class="research-title">Stochastic Dynamics of Brownian Motion</h3>
+
+        <div class="research-advisors">
+          <div class="advisor">
+            <span class="advisor-label">Collaborator</span>
+            <span class="advisor-name">Dr. Raju Roychowdhury</span>
+            <span class="advisor-affil">University of Delhi, Delhi</span>
+          </div>
+        </div>
+
+        <div class="research-body">
+          <div class="research-description">
+            <h4>Overview</h4>
+            <p>
+              This project investigates the dynamics of Brownian motion in classical
+              non-conservative systems — situations where energy is not conserved due to
+              dissipative forces or external driving. Understanding these stochastic dynamics
+              has broad applications in biophysics, statistical mechanics, and colloidal science.
+            </p>
+            <h4>Methodology</h4>
+            <ul class="research-list">
+              <li>Deriving analytical solutions using <strong>Green's functions</strong></li>
+              <li>Computing correlation functions and mean-square displacement analytically</li>
+              <li>Implementing <strong>Monte Carlo simulations</strong> for stochastic modeling</li>
+              <li>Statistical analysis of particle trajectories and ensemble averages</li>
+            </ul>
+          </div>
+          <div class="research-tools">
+            <h4>Tools &amp; Methods</h4>
+            <div class="tags-wrap">
+              <span class="tag">Green's Functions</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">Python</span>
+              <span class="tag">Statistical Mechanics</span>
+              <span class="tag">Stochastic Processes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST RESEARCH -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-label">02 / Past Work</div>
+      <h2 class="section-title">Completed Projects</h2>
+
+      <!-- VECC Internship -->
+      <div class="research-card reveal">
+        <div class="research-card-header">
+          <div class="research-meta">
+            <span class="tag">Summer Internship</span>
+            <span class="research-period">Jun – Jul 2024</span>
+            <span class="research-location">VECC, Kolkata</span>
+          </div>
+          <div class="research-status completed-status">Completed</div>
+        </div>
+
+        <h3 class="research-title">
+          Development of Carbon and Carbon Monoxide Ion Beams for Si Surface
+          Modification and Nanostructuring
+        </h3>
+
+        <div class="research-advisors">
+          <div class="advisor">
+            <span class="advisor-label">Supervisor</span>
+            <span class="advisor-name">Dr. Prasanta Karmakar</span>
+            <span class="advisor-affil">Variable Energy Cyclotron Centre (VECC), Kolkata</span>
+          </div>
+        </div>
+
+        <div class="research-body">
+          <div class="research-description">
+            <h4>Overview</h4>
+            <p>
+              At the Variable Energy Cyclotron Centre — a premier nuclear research facility
+              in India — this internship focused on developing and characterizing low-energy
+              ion beams for precise surface modification of silicon substrates, with
+              applications in semiconductor nanostructuring and quantum computing devices.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul class="research-list">
+              <li>Developed and optimised low-energy ion beams (C⁺, N⁺, N₂⁺, CO⁺) using an <strong>ECR Ion Source</strong></li>
+              <li>Performed <strong>mass separation</strong> with dipole magnets for beam purity</li>
+              <li>Carried out <strong>ion implantation</strong> on Si(100) substrates</li>
+              <li>Verified implantation profiles using <strong>SRIM simulations</strong></li>
+              <li>Conducted theoretical study of <strong>quantum computing devices</strong> and ion beam control systems</li>
+            </ul>
+          </div>
+          <div class="research-tools">
+            <h4>Tools &amp; Methods</h4>
+            <div class="tags-wrap">
+              <span class="tag">ECR Ion Source</span>
+              <span class="tag">SRIM</span>
+              <span class="tag">Ion Implantation</span>
+              <span class="tag">Dipole Magnets</span>
+              <span class="tag">Si(100) Substrate</span>
+              <span class="tag">Nanostructuring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BSc Thesis -->
+      <div class="research-card reveal">
+        <div class="research-card-header">
+          <div class="research-meta">
+            <span class="tag">B.Sc. Thesis</span>
+            <span class="research-period">Aug 2023 – May 2024</span>
+            <span class="research-location">UPES, Dehradun</span>
+          </div>
+          <div class="research-status completed-status">Completed</div>
+        </div>
+
+        <h3 class="research-title">
+          A Comprehensive Study on Detection Techniques and Trends in
+          Characteristics of Exoplanets
+        </h3>
+
+        <div class="research-advisors">
+          <div class="advisor">
+            <span class="advisor-label">Supervisor</span>
+            <span class="advisor-name">Dr. Rashi Jain</span>
+            <span class="advisor-affil">Research Fellow, University of Southampton, UK</span>
+          </div>
+        </div>
+
+        <div class="research-body">
+          <div class="research-description">
+            <h4>Overview</h4>
+            <p>
+              A data-driven investigation into the statistical properties of exoplanets in the
+              NASA archive, exploring how different detection techniques (transit photometry,
+              radial velocity, direct imaging, microlensing) introduce systematic biases into
+              the observed exoplanet population.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul class="research-list">
+              <li>Performed <strong>statistical analysis</strong> and graphical visualisation of NASA exoplanet archive data using <strong>TOPCAT</strong></li>
+              <li>Identified <strong>trends in exoplanetary properties</strong> (mass, radius, orbital period, eccentricity) across detection methods</li>
+              <li>Implemented a <strong>Random Forest algorithm</strong> in Python to predict target exoplanet properties from known variables</li>
+              <li>Produced a trained ML model that <strong>fills observational gaps</strong> in the archive caused by detection technique biases</li>
+            </ul>
+          </div>
+          <div class="research-tools">
+            <h4>Tools &amp; Methods</h4>
+            <div class="tags-wrap">
+              <span class="tag">TOPCAT</span>
+              <span class="tag">Python</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">NASA Archive</span>
+              <span class="tag">Statistical Analysis</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Transit Photometry</span>
+              <span class="tag">Radial Velocity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFEREES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">03 / Collaborators</div>
+      <h2 class="section-title">Supervisors &amp; Referees</h2>
+
+      <div class="referees-grid reveal-children">
+        <div class="referee-card">
+          <div class="referee-initials">AC</div>
+          <div>
+            <h3 class="referee-name">Dr. Arka Chatterjee</h3>
+            <p class="referee-role">M.Sc. Advisor</p>
+            <p class="referee-affil">Assistant Professor, Department of Physics</p>
+            <p class="referee-org">UPES Dehradun, Uttarakhand – 248007</p>
+            <a href="mailto:arka.chatterjee@ddn.upes.ac.in" class="referee-email">arka.chatterjee@ddn.upes.ac.in</a>
+          </div>
+        </div>
+
+        <div class="referee-card">
+          <div class="referee-initials">RJ</div>
+          <div>
+            <h3 class="referee-name">Dr. Rashi Jain</h3>
+            <p class="referee-role">B.Sc. Advisor</p>
+            <p class="referee-affil">Research Fellow, Department of Physics</p>
+            <p class="referee-org">University of Southampton, SO17 1BJ, UK</p>
+            <a href="mailto:rashi.jain@soton.ac.uk" class="referee-email">rashi.jain@soton.ac.uk</a>
+          </div>
+        </div>
+
+        <div class="referee-card">
+          <div class="referee-initials">SD</div>
+          <div>
+            <h3 class="referee-name">Prof. Santosh Dubey</h3>
+            <p class="referee-role">Professor</p>
+            <p class="referee-affil">Department of Physics</p>
+            <p class="referee-org">UPES Dehradun, Uttarakhand – 248007</p>
+            <a href="mailto:santosh.dubey@ddn.upes.ac.in" class="referee-email">santosh.dubey@ddn.upes.ac.in</a>
+          </div>
+        </div>
+
+        <div class="referee-card">
+          <div class="referee-initials">PR</div>
+          <div>
+            <h3 class="referee-name">Dr. Prashant S. Rawat</h3>
+            <p class="referee-role">Senior Associate Professor</p>
+            <p class="referee-affil">Department of Physics</p>
+            <p class="referee-org">UPES Dehradun, Uttarakhand – 248007</p>
+            <a href="mailto:psrawat@ddn.upes.ac.in" class="referee-email">psrawat@ddn.upes.ac.in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-psi">Ψ</span>
+        <span class="logo-text">Abhineet Srivastava</span>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+      <p class="footer-copy">© 2025 Abhineet Srivastava · UPES Dehradun</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

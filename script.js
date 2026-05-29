@@ -342,10 +342,10 @@
   if (!titleEl) return;
 
   const phrases = [
-    'Computational Physicist & Scientific Developer',
-    'Numerical Methods · Algorithms · Data Analysis',
-    'Python · C++ · Astrophysics · Spectroscopy',
-    'Turning Equations Into Elegant Code',
+    'M.Sc. Physics · UPES Dehradun',
+    'Black Holes · X-ray Timing · Spectral Analysis',
+    'Python · C++ · NuSTAR · HEASARC · TOPCAT',
+    'From Equations to Elegant Code',
   ];
 
   let phraseIndex = 0;

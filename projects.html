@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Abhineet Srivastava</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Code+Pro:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-psi">Ψ</span>
+      <span class="logo-text">A.Srivastava</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="research.html" class="mobile-link">Research</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="cv.html" class="mobile-link">CV</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <div class="section-label">Projects</div>
+        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.8rem)">Code &amp; Projects</h1>
+        <p class="section-sub" style="max-width:640px">
+          Open-source tools, numerical simulations, and data analysis pipelines
+          built for astrophysics and scientific computing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED: PHYSICS LIBRARY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">01 / Featured</div>
+      <h2 class="section-title">Computational Physics Library</h2>
+
+      <div class="library-feature reveal">
+        <div class="library-feature-header">
+          <div class="library-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--clr-accent)" stroke-width="2" width="28" height="28"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Live Website</span>
+          </div>
+          <h3 class="library-title">sabhineet.github.io/computational-physics-library</h3>
+          <p class="library-desc">
+            An open-source, web-accessible library of computational physics implementations.
+            Designed for students and researchers who want ready-to-use, well-documented
+            numerical tools for classical mechanics, quantum mechanics, electromagnetism,
+            and astrophysics.
+          </p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+            <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Open Library
+            </a>
+            <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Embedded iframe preview -->
+        <div class="library-iframe-wrap">
+          <div class="iframe-label">
+            <span class="pulse-dot" style="--pulse-color:var(--clr-accent)"></span>
+            Live Preview
+          </div>
+          <iframe
+            src="https://sabhineet.github.io/computational-physics-library/"
+            title="Computational Physics Library"
+            class="library-iframe"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups"
+          ></iframe>
+          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="iframe-overlay-link">
+            Open in full tab ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER PROJECTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-label">02 / Coding Projects</div>
+      <h2 class="section-title">Other Work</h2>
+      <p class="section-sub">Data pipelines, simulations, and analysis tools built for research.</p>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">Astrophysics · ML</span>
+            <span class="project-year">2023–24</span>
+          </div>
+          <h3 class="project-title">Exoplanet Property Predictor</h3>
+          <p class="project-desc">
+            A Random Forest model trained on the NASA Exoplanet Archive to predict
+            unmeasured planetary properties (mass, radius, etc.) from known observables.
+            Fills data gaps introduced by detection technique biases.
+          </p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">TOPCAT</span>
+              <span class="tag">NASA Archive</span>
+            </div>
+            <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.78rem;padding:.5rem 1rem;">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">Nuclear Physics</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Ion Beam Implantation Simulation</h3>
+          <p class="project-desc">
+            SRIM-based simulation pipeline for predicting implantation depth profiles
+            of C⁺, N⁺, and CO⁺ ions in Si(100) substrates. Used to verify and
+            optimise experimental parameters at VECC Kolkata.
+          </p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tag">SRIM</span>
+              <span class="tag">Python</span>
+              <span class="tag">Ion Physics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">Statistical Mechanics</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3 class="project-title">Brownian Motion Monte Carlo Simulator</h3>
+          <p class="project-desc">
+            A Python Monte Carlo engine for simulating stochastic Brownian motion
+            in classical non-conservative potentials. Outputs ensemble statistics,
+            mean-square displacement, and correlation functions.
+          </p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+            <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.78rem;padding:.5rem 1rem;">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">X-ray Astronomy</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3 class="project-title">NuSTAR X-ray Analysis Pipeline</h3>
+          <p class="project-desc">
+            An automated Python pipeline for reducing and analysing NuSTAR FITS data —
+            from barycentric correction and light curve extraction to Fourier-domain
+            power density spectra and time lag calculations.
+          </p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">HEASoft</span>
+              <span class="tag">Astropy</span>
+              <span class="tag">NuSTAR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-header">
+            <span class="tag">Portfolio · Web</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3 class="project-title">This Portfolio Website</h3>
+          <p class="project-desc">
+            A multi-page academic portfolio featuring animated starfield background,
+            scroll-reveal animations, and a full CV — built with vanilla HTML, CSS,
+            and JavaScript. Hosted on GitHub Pages.
+          </p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+            <a href="https://github.com/sabhineet/sabhineet.github.io" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.78rem;padding:.5rem 1rem;">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <p class="section-sub" style="margin:0 auto 1.5rem">All code is open-source and available on GitHub.</p>
+      <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+        github.com/sabhineet
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-psi">Ψ</span>
+        <span class="logo-text">Abhineet Srivastava</span>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+      <p class="footer-copy">© 2025 Abhineet Srivastava · UPES Dehradun</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
