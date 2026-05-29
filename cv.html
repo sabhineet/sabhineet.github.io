@@ -7,17 +7,12 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Source+Code+Pro:wght@300;400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <canvas id="starfield"></canvas>
-
   <nav id="navbar">
-    <a href="index.html" class="nav-logo">
-      <span class="logo-psi">Ψ</span>
-      <span class="logo-text">A.Srivastava</span>
-    </a>
+    <a href="index.html" class="nav-logo">Abhineet Srivastava</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html">Research</a></li>
@@ -41,24 +36,19 @@
     </ul>
   </div>
 
-  <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
       <div class="page-hero-inner">
         <div class="section-label">Curriculum Vitae</div>
-        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.8rem)">Abhineet Srivastava</h1>
-        <p class="section-sub">M.Sc. Physics Student · UPES Dehradun, India</p>
-        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
-          <a href="mailto:abhixneet@gmail.com" class="btn btn-outline" style="font-size:0.82rem">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            abhixneet@gmail.com
-          </a>
-          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.82rem">GitHub</a>
-          <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.82rem">LinkedIn</a>
-          <a href="Master_CV_Abhineet_Srivastava.pdf" download class="btn btn-primary" style="font-size:0.82rem">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download PDF
-          </a>
+        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem)">Abhineet Srivastava</h1>
+        <p class="section-sub" style="margin-bottom:1.5rem">
+          M.Sc. Physics · UPES Dehradun, India
+        </p>
+        <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+          <a href="mailto:abhixneet@gmail.com" class="btn btn-outline" style="font-size:0.78rem">abhixneet@gmail.com</a>
+          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.78rem">GitHub</a>
+          <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.78rem">LinkedIn</a>
+          <a href="Master_CV_Abhineet_Srivastava.pdf" download class="btn btn-primary" style="font-size:0.78rem">Download PDF</a>
         </div>
       </div>
     </div>
@@ -68,61 +58,54 @@
     <div class="container">
       <div class="cv-grid">
 
-        <!-- LEFT COLUMN -->
+        <!-- SIDEBAR -->
         <aside class="cv-sidebar">
 
-          <!-- Research Interests -->
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Research Interests</h3>
             <ul class="cv-sidebar-list">
-              <li>Black Hole Accretion Physics</li>
-              <li>High Energy Astrophysics &amp; Radiative Processes</li>
-              <li>Exoplanet Detection &amp; Characterisation</li>
-              <li>Galaxy Formation &amp; Evolution</li>
-              <li>Dark Matter &amp; Dark Energy</li>
-              <li>Computational Astrophysics</li>
-              <li>Machine Learning in Astronomy</li>
+              <li>Black hole accretion physics</li>
+              <li>High-energy astrophysics &amp; radiative processes</li>
+              <li>Exoplanet detection &amp; characterisation</li>
+              <li>Galaxy formation &amp; evolution</li>
+              <li>Dark matter &amp; dark energy</li>
+              <li>Computational astrophysics</li>
+              <li>Machine learning in astronomy</li>
             </ul>
           </div>
 
-          <!-- Technical Skills -->
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Programming</h3>
-            <div class="cv-skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">C++</span>
-              <span class="tag">Fortran</span>
-              <span class="tag">MATLAB</span>
-              <span class="tag">Scilab</span>
-              <span class="tag">LaTeX</span>
-            </div>
+            <ul class="cv-sidebar-list">
+              <li>Python</li>
+              <li>C++</li>
+              <li>Fortran</li>
+              <li>MATLAB / Scilab</li>
+              <li>LaTeX</li>
+            </ul>
           </div>
 
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Tools &amp; Software</h3>
-            <div class="cv-skill-tags">
-              <span class="tag">HEASARC</span>
-              <span class="tag">Gnuplot</span>
-              <span class="tag">TOPCAT</span>
-              <span class="tag">Aladin</span>
-              <span class="tag">Origin</span>
-              <span class="tag">iSpec</span>
-              <span class="tag">Overleaf</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">SRIM</span>
-              <span class="tag">MS Suite</span>
-            </div>
+            <ul class="cv-sidebar-list">
+              <li>HEASARC / HEASoft</li>
+              <li>Gnuplot / Origin</li>
+              <li>TOPCAT</li>
+              <li>Aladin / iSpec</li>
+              <li>SRIM</li>
+              <li>Overleaf</li>
+              <li>GitHub</li>
+            </ul>
           </div>
 
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Operating Systems</h3>
-            <div class="cv-skill-tags">
-              <span class="tag">Linux</span>
-              <span class="tag">Windows</span>
-            </div>
+            <ul class="cv-sidebar-list">
+              <li>Linux</li>
+              <li>Windows</li>
+            </ul>
           </div>
 
-          <!-- Online Courses -->
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Online Courses</h3>
             <ul class="cv-sidebar-list">
@@ -132,36 +115,35 @@
             </ul>
           </div>
 
-          <!-- Training -->
           <div class="cv-sidebar-section reveal">
             <h3 class="cv-sidebar-heading">Training</h3>
-            <div class="cv-training-item">
-              <span class="cv-training-name">Summer School on Gravitational-Wave Astronomy</span>
-              <span class="cv-training-org">ICTS-TIFR, Bengaluru</span>
-              <span class="cv-training-date">July 2025</span>
-            </div>
+            <ul class="cv-sidebar-list">
+              <li>Summer School on Gravitational-Wave Astronomy<br>
+                <span style="font-style:italic;font-size:0.8rem;color:var(--clr-text-dim)">ICTS-TIFR, Bengaluru · July 2025</span>
+              </li>
+            </ul>
           </div>
 
         </aside>
 
-        <!-- RIGHT COLUMN: Main CV content -->
+        <!-- MAIN CONTENT -->
         <main class="cv-main">
 
-          <!-- Education -->
           <section class="cv-section">
             <h2 class="cv-section-title">
               <span class="cv-section-num">01</span> Education
             </h2>
             <div class="timeline">
+
               <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
+                <div class="timeline-dot timeline-dot--accent"></div>
                 <div class="timeline-content">
                   <div class="timeline-header">
                     <h3>Master of Science (Physics)</h3>
                     <span class="timeline-period">2024 – 2026</span>
                   </div>
                   <p class="timeline-place">UPES, Dehradun, Uttarakhand</p>
-                  <p class="timeline-detail">Current Grade: <strong>76%</strong></p>
+                  <p class="timeline-detail">Thesis: <em>Decoding Disk-Corona-Jet Connections of Stellar Mass Black Holes through Timing and Spectral Analysis</em></p>
                 </div>
               </div>
 
@@ -173,7 +155,6 @@
                     <span class="timeline-period">2021 – 2024</span>
                   </div>
                   <p class="timeline-place">UPES, Dehradun, Uttarakhand</p>
-                  <p class="timeline-detail">Grade: <strong>72.3%</strong></p>
                   <p class="timeline-detail">Thesis: <em>A Comprehensive Study on Detection Techniques and Trends in Characteristics of Exoplanets</em></p>
                 </div>
               </div>
@@ -186,7 +167,6 @@
                     <span class="timeline-period">2020 – 2021</span>
                   </div>
                   <p class="timeline-place">B.B.L. Public School, Bareilly, Uttar Pradesh</p>
-                  <p class="timeline-detail">Grade: <strong>87.6%</strong></p>
                 </div>
               </div>
 
@@ -198,13 +178,12 @@
                     <span class="timeline-period">2018 – 2019</span>
                   </div>
                   <p class="timeline-place">B.B.L. Public School, Bareilly, Uttar Pradesh</p>
-                  <p class="timeline-detail">Grade: <strong>91.8%</strong></p>
                 </div>
               </div>
+
             </div>
           </section>
 
-          <!-- Academic Projects -->
           <section class="cv-section">
             <h2 class="cv-section-title">
               <span class="cv-section-num">02</span> Academic Projects
@@ -216,14 +195,14 @@
                 <div class="timeline-content">
                   <div class="timeline-header">
                     <h3>M.Sc. Thesis — UPES, Dehradun</h3>
-                    <span class="timeline-period tag tag--gold">Aug 2025 – Present</span>
+                    <span class="timeline-period">Aug 2025 – Present</span>
                   </div>
                   <p class="timeline-sub-title">Decoding Disk-Corona-Jet Connections of Stellar Mass Black Holes through Timing and Spectral Analysis</p>
                   <p class="timeline-place">Supervisors: Dr. Arka Chatterjee (UPES) · Dr. Sudip K. Garain (IISER Kolkata)</p>
                   <ul class="timeline-bullets">
-                    <li>Utilised X-ray data from NuSTAR mission to study stellar mass black holes</li>
-                    <li>Analysed light curves, time lag and power density spectra caused by variability</li>
-                    <li>Linking disk-corona-jet connections of stellar mass black holes</li>
+                    <li>Utilised X-ray data from the NuSTAR mission to study stellar-mass black holes</li>
+                    <li>Analysed light curves, time lags, and power density spectra from observed variability</li>
+                    <li>Investigating disk-corona-jet coupling in stellar-mass black hole systems</li>
                   </ul>
                   <div class="tags-wrap" style="margin-top:.75rem">
                     <span class="tag">NuSTAR</span><span class="tag">X-ray Timing</span><span class="tag">HEASARC</span><span class="tag">Python</span>
@@ -236,14 +215,14 @@
                 <div class="timeline-content">
                   <div class="timeline-header">
                     <h3>External Project — University of Delhi</h3>
-                    <span class="timeline-period tag tag--gold">Aug 2025 – Present</span>
+                    <span class="timeline-period">Aug 2025 – Present</span>
                   </div>
                   <p class="timeline-sub-title">Stochastic Dynamics of Brownian Motion</p>
                   <p class="timeline-place">Collaborator: Dr. Raju Roychowdhury (University of Delhi)</p>
                   <ul class="timeline-bullets">
-                    <li>Working on the dynamics of Brownian motion in classical non-conservative systems</li>
-                    <li>Using Green's functions to study analytical behaviour and correlations</li>
-                    <li>Implementing Monte Carlo simulations for stochastic modeling and statistical analysis</li>
+                    <li>Studying Brownian motion dynamics in classical non-conservative systems</li>
+                    <li>Applying Green's functions to analyse analytical behaviour and correlations</li>
+                    <li>Monte Carlo simulations for stochastic modelling and statistical analysis</li>
                   </ul>
                   <div class="tags-wrap" style="margin-top:.75rem">
                     <span class="tag">Green's Functions</span><span class="tag">Monte Carlo</span><span class="tag">Python</span>
@@ -262,9 +241,9 @@
                   <p class="timeline-place">Supervisor: Dr. Prasanta Karmakar (Variable Energy Cyclotron Centre)</p>
                   <ul class="timeline-bullets">
                     <li>Developed and optimised low-energy ion beams (C⁺, N⁺, N₂⁺, CO⁺) using an ECR Ion Source</li>
-                    <li>Performed mass separation with dipole magnets and ion implantation on Si(100) substrate</li>
-                    <li>Verified through simulated implantation in Si(100) using SRIM</li>
-                    <li>Conducted theoretical study of quantum computing devices and ion beam control systems</li>
+                    <li>Mass separation with dipole magnets and ion implantation on Si(100) substrate</li>
+                    <li>Verified through simulated implantation using SRIM</li>
+                    <li>Theoretical study of quantum computing devices and ion beam control systems</li>
                   </ul>
                   <div class="tags-wrap" style="margin-top:.75rem">
                     <span class="tag">ECR Ion Source</span><span class="tag">SRIM</span><span class="tag">Ion Implantation</span>
@@ -282,24 +261,25 @@
                   <p class="timeline-sub-title">A Comprehensive Study on Detection Techniques and Trends in Characteristics of Exoplanets</p>
                   <p class="timeline-place">Supervisor: Dr. Rashi Jain (UPES / University of Southampton)</p>
                   <ul class="timeline-bullets">
-                    <li>Statistical analysis and graphical representation of NASA exoplanet archive data using TOPCAT</li>
-                    <li>Applied random forest algorithm to predict target properties using selected variables in Python</li>
-                    <li>Produced trained model to fill gaps in target properties caused by different detection techniques</li>
+                    <li>Statistical analysis and visualisation of NASA exoplanet archive data using TOPCAT</li>
+                    <li>Random forest model to predict unmeasured planetary properties from known observables</li>
+                    <li>Model fills measurement gaps caused by detection technique limitations</li>
                   </ul>
                   <div class="tags-wrap" style="margin-top:.75rem">
                     <span class="tag">TOPCAT</span><span class="tag">Random Forest</span><span class="tag">Python</span><span class="tag">NASA Archive</span>
                   </div>
                 </div>
               </div>
+
             </div>
           </section>
 
-          <!-- Extracurricular -->
           <section class="cv-section">
             <h2 class="cv-section-title">
               <span class="cv-section-num">03</span> Extracurricular Activities
             </h2>
             <div class="timeline">
+
               <div class="timeline-item reveal">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
@@ -309,9 +289,9 @@
                   </div>
                   <p class="timeline-place">UPES Dehradun · Founding Member &amp; Head of Marketing &amp; PR</p>
                   <ul class="timeline-bullets">
-                    <li>Organized numerous science society activities among students across multiple majors</li>
-                    <li>Conducted educational field trip to Astronomical Observatory of India</li>
-                    <li>Collaborated with ISRO scientist to organize a workshop on the Aditya L1 mission</li>
+                    <li>Organised science activities across multiple student cohorts</li>
+                    <li>Conducted educational field trip to the Astronomical Observatory of India</li>
+                    <li>Organised workshop on the Aditya L1 mission in collaboration with ISRO scientists</li>
                   </ul>
                 </div>
               </div>
@@ -329,6 +309,40 @@
                   </ul>
                 </div>
               </div>
+
+            </div>
+          </section>
+
+          <section class="cv-section">
+            <h2 class="cv-section-title">
+              <span class="cv-section-num">04</span> Collaborators &amp; Referees
+            </h2>
+
+            <div class="collaborators-grid" style="margin-top:0.5rem">
+              <div class="collaborator-card reveal">
+                <h3>Dr. Arka Chatterjee</h3>
+                <p class="role">M.Sc. Thesis Advisor</p>
+                <p class="affil">Assistant Professor, Department of Physics<br>UPES Dehradun</p>
+                <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:.5rem">arka.chatterjee@ddn.upes.ac.in</p>
+              </div>
+              <div class="collaborator-card reveal">
+                <h3>Dr. Rashi Jain</h3>
+                <p class="role">B.Sc. Thesis Advisor</p>
+                <p class="affil">Research Fellow, University of Southampton, UK</p>
+                <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:.5rem">rashi.jain@soton.ac.uk</p>
+              </div>
+              <div class="collaborator-card reveal">
+                <h3>Prof. Santosh Dubey</h3>
+                <p class="role">Referee</p>
+                <p class="affil">Professor, Department of Physics<br>UPES Dehradun</p>
+                <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:.5rem">santosh.dubey@ddn.upes.ac.in</p>
+              </div>
+              <div class="collaborator-card reveal">
+                <h3>Dr. Prashant S. Rawat</h3>
+                <p class="role">Referee</p>
+                <p class="affil">Senior Associate Professor, Department of Physics<br>UPES Dehradun</p>
+                <p style="font-size:0.8rem;color:var(--clr-text-muted);margin-top:.5rem">psrawat@ddn.upes.ac.in</p>
+              </div>
             </div>
           </section>
 
@@ -339,17 +353,14 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-logo">
-        <span class="logo-psi">Ψ</span>
-        <span class="logo-text">Abhineet Srivastava</span>
-      </div>
-      <div class="footer-nav">
+      <div class="footer-logo">Abhineet Srivastava</div>
+      <nav class="footer-nav">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="cv.html">CV</a>
-      </div>
-      <p class="footer-copy">© 2025 Abhineet Srivastava · UPES Dehradun</p>
+      </nav>
+      <p class="footer-copy">© 2026 Abhineet Srivastava · UPES Dehradun</p>
     </div>
   </footer>
 
