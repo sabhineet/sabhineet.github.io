@@ -1,12 +1,39 @@
 /* ============================================================
    SCRIPT.JS — Academic Portfolio
    Handles:
-     1. Navbar scroll behaviour
-     2. Mobile menu toggle
-     3. Scroll-reveal animations (IntersectionObserver)
-     4. Contact form pseudo-submission
-     5. Smooth scrolling
+     1. Dark / Light theme toggle (persisted via localStorage)
+     2. Navbar scroll behaviour
+     3. Mobile menu toggle
+     4. Scroll-reveal animations (IntersectionObserver)
+     5. Contact form pseudo-submission
+     6. Smooth scrolling
    ============================================================ */
+
+/* 1. THEME TOGGLE */
+(function initTheme() {
+  const root   = document.documentElement;
+  const btn    = document.getElementById('themeToggle');
+  const label  = btn ? btn.querySelector('.theme-toggle-label') : null;
+  const icon   = btn ? btn.querySelector('.theme-toggle-icon') : null;
+
+  // Restore saved preference, default to light
+  const saved = localStorage.getItem('theme') || 'light';
+  applyTheme(saved);
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') || 'light';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    if (label) label.textContent = theme === 'dark' ? 'Light' : 'Dark';
+    if (icon)  icon.textContent  = theme === 'dark' ? '○' : '◐';
+  }
+})();
 
 /* 1. NAVBAR */
 (function initNavbar() {

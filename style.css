@@ -19,7 +19,7 @@
   --clr-text-muted: #756f65;
   --clr-text-dim:   #aaa49b;
 
-  --clr-accent:     #2c4a6e;   /* deep navy — understated academic */
+  --clr-accent:     #2c4a6e;
   --clr-accent-lt:  #e8edf4;
   --clr-rule:       #c4bfb6;
 
@@ -31,7 +31,53 @@
   --radius:        3px;
   --max-w:         1100px;
   --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+
+  --transition-theme: background 0.3s, color 0.3s, border-color 0.3s;
 }
+
+/* ---- DARK MODE ---- */
+[data-theme="dark"] {
+  --clr-bg:         #141210;
+  --clr-bg-alt:     #1a1814;
+  --clr-surface:    #1f1d19;
+  --clr-border:     #302d27;
+  --clr-border-hi:  #45413a;
+
+  --clr-ink:        #ede9e2;
+  --clr-text:       #cdc8bf;
+  --clr-text-muted: #8a8278;
+  --clr-text-dim:   #514d47;
+
+  --clr-accent:     #7ea8d4;   /* lighter navy for dark backgrounds */
+  --clr-accent-lt:  #1e2a38;
+  --clr-rule:       #302d27;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--clr-border-hi);
+  border-radius: var(--radius);
+  cursor: pointer;
+  padding: 0.4rem 0.65rem;
+  color: var(--clr-text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: border-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.theme-toggle-icon { font-size: 0.85rem; line-height: 1; }
 
 /* ---- RESET & BASE ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -45,6 +91,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   overflow-x: hidden;
+  transition: var(--transition-theme);
 }
 
 a { color: inherit; text-decoration: none; }
