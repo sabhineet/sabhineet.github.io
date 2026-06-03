@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research — Abhineet Srivastava</title>
   <link rel="stylesheet" href="style.css" />
-  <script>(function(){var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);})();</script>
+  <script>(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -18,10 +18,14 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="research.html" class="active">Research</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-toggle-icon">◐</span><span class="theme-toggle-label">Dark</span></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon" id="themeIcon">☀</span>
+      <span id="themeLabel">Light</span>
+    </button>
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -33,6 +37,7 @@
       <li><a href="index.html" class="mobile-link">Home</a></li>
       <li><a href="research.html" class="mobile-link">Research</a></li>
       <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="certifications.html" class="mobile-link">Certifications</a></li>
       <li><a href="cv.html" class="mobile-link">CV</a></li>
       <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
     </ul>
@@ -41,8 +46,8 @@
   <section class="page-hero">
     <div class="container">
       <div class="page-hero-inner">
-        <div class="section-label">Research</div>
-        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem)">Academic Research</h1>
+        <span class="eyebrow">Academic Research</span>
+        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem)">Research</h1>
         <p class="section-sub" style="margin-bottom:0">
           Work in high-energy astrophysics, statistical mechanics, nuclear physics,
           and machine learning applied to astronomical data.
@@ -51,30 +56,28 @@
     </div>
   </section>
 
-  <!-- GRADUATE RESEARCH -->
+  <!-- GRADUATE WORK -->
   <section class="section">
     <div class="container">
-      <div class="section-label">Graduate Work</div>
-
+      <span class="eyebrow">Graduate Work</span>
       <div class="research-list">
 
         <div id="thesis" class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Aug 2025 – Present</span>
-            <span class="research-type">M.Sc. Thesis</span>
+          <div class="r-meta">
+            <span class="r-period">Aug 2025 – Present</span>
+            <span class="r-type">M.Sc. Thesis</span>
           </div>
-          <div class="research-body">
+          <div class="r-body">
             <h3>Decoding Disk-Corona-Jet Connections of Stellar-Mass Black Holes through Timing and Spectral Analysis</h3>
-            <p class="supervisor">
-              Supervisor: Dr. Arka Chatterjee, UPES Dehradun &nbsp;·&nbsp;
-              Co-Supervisor: Dr. Sudip K. Garain, IISER Kolkata
+            <p class="r-supervisor">
+              Supervisor: Dr. Arka Chatterjee, UPES Dehradun
+              &nbsp;·&nbsp; Co-Supervisor: Dr. Sudip K. Garain, IISER Kolkata
             </p>
             <p>
               This thesis uses X-ray observations from NASA's NuSTAR mission to investigate the
               physical coupling between the accretion disk, corona, and relativistic jet in
-              stellar-mass black hole systems. The primary observables are light curves,
-              power density spectra, and inter-band time lag spectra extracted from
-              high-energy photon count data.
+              stellar-mass black hole systems. Primary observables: light curves, power density
+              spectra, and inter-band time lag spectra extracted from high-energy photon count data.
             </p>
             <ul>
               <li>Barycentric correction, source extraction, and light curve production from NuSTAR FITS data</li>
@@ -83,41 +86,42 @@
               <li>Spectral modelling to constrain accretion geometry and coronal properties</li>
             </ul>
             <div class="tags-wrap" style="margin-top:1rem">
-              <span class="tag">NuSTAR</span>
+              <span class="tag tag--accent">NuSTAR</span>
               <span class="tag">HEASoft</span>
               <span class="tag">HEASARC</span>
               <span class="tag">Python</span>
               <span class="tag">X-ray Timing</span>
               <span class="tag">Power Density Spectra</span>
               <span class="tag">Time Lags</span>
+              <span class="tag">Astropy</span>
             </div>
           </div>
         </div>
 
         <div id="brownian" class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Aug 2025 – Present</span>
-            <span class="research-type">External Project</span>
+          <div class="r-meta">
+            <span class="r-period">Aug 2025 – Present</span>
+            <span class="r-type">External Project</span>
           </div>
-          <div class="research-body">
-            <h3>Stochastic Dynamics of Brownian Motion</h3>
-            <p class="supervisor">
+          <div class="r-body">
+            <h3>Stochastic Dynamics of Brownian Motion in Non-Conservative Potentials</h3>
+            <p class="r-supervisor">
               Collaborator: Dr. Raju Roychowdhury, University of Delhi
             </p>
             <p>
-              This project examines the dynamics of a Brownian particle embedded in a
-              classical non-conservative force field, where standard fluctuation-dissipation
-              relations do not apply in their usual form. The work combines analytical
-              Green's function methods with large-scale Monte Carlo numerical simulation.
+              Examining the dynamics of a Brownian particle embedded in a classical
+              non-conservative force field, where standard fluctuation-dissipation relations
+              do not apply in their usual form. The work combines analytical Green's function
+              methods with large-scale Monte Carlo numerical simulation.
             </p>
             <ul>
               <li>Derivation and application of Green's functions for the generalised Langevin equation</li>
-              <li>Computation of ensemble-averaged mean-square displacement and velocity autocorrelations</li>
+              <li>Ensemble-averaged mean-square displacement and velocity autocorrelation computation</li>
               <li>Monte Carlo simulation of stochastic trajectories for statistical characterisation</li>
               <li>Analysis of non-equilibrium steady states and probability distribution evolution</li>
             </ul>
             <div class="tags-wrap" style="margin-top:1rem">
-              <span class="tag">Green's Functions</span>
+              <span class="tag tag--accent">Green's Functions</span>
               <span class="tag">Monte Carlo</span>
               <span class="tag">Langevin Dynamics</span>
               <span class="tag">Python</span>
@@ -133,22 +137,23 @@
   <!-- PREVIOUS WORK -->
   <section class="section section-alt">
     <div class="container">
-      <div class="section-label">Previous Work</div>
-
+      <span class="eyebrow">Previous Work</span>
       <div class="research-list">
 
         <div class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Jun – Jul 2024</span>
-            <span class="research-type">Summer Internship · VECC Kolkata</span>
+          <div class="r-meta">
+            <span class="r-period">Jun – Jul 2024</span>
+            <span class="r-type">Summer Internship · VECC Kolkata</span>
           </div>
-          <div class="research-body">
+          <div class="r-body">
             <h3>Development of Carbon and Carbon Monoxide Ion Beams for Si Surface Modification and Nanostructuring</h3>
-            <p class="supervisor">Supervisor: Dr. Prasanta Karmakar, Variable Energy Cyclotron Centre</p>
+            <p class="r-supervisor">
+              Supervisor: Dr. Prasanta Karmakar, Variable Energy Cyclotron Centre, Kolkata
+            </p>
             <p>
               Developed and characterised low-energy ion beams at the VECC ECR Ion Source facility
-              for surface modification of Si(100) substrates. The work involved experimental beam
-              production and theoretical validation via simulation.
+              for surface modification of Si(100) substrates. Involved experimental beam production
+              and theoretical validation via SRIM simulation.
             </p>
             <ul>
               <li>Optimised C⁺, N⁺, N₂⁺, and CO⁺ beams from the ECR Ion Source</li>
@@ -161,18 +166,21 @@
               <span class="tag">SRIM</span>
               <span class="tag">Ion Implantation</span>
               <span class="tag">Si(100)</span>
+              <span class="tag">Nuclear Physics</span>
             </div>
           </div>
         </div>
 
         <div class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Aug 2023 – May 2024</span>
-            <span class="research-type">B.Sc. Thesis</span>
+          <div class="r-meta">
+            <span class="r-period">Aug 2023 – May 2024</span>
+            <span class="r-type">B.Sc. Thesis</span>
           </div>
-          <div class="research-body">
+          <div class="r-body">
             <h3>A Comprehensive Study on Detection Techniques and Trends in Characteristics of Exoplanets</h3>
-            <p class="supervisor">Supervisor: Dr. Rashi Jain, UPES Dehradun / University of Southampton</p>
+            <p class="r-supervisor">
+              Supervisor: Dr. Rashi Jain, UPES Dehradun / University of Southampton
+            </p>
             <p>
               Analysed the NASA Exoplanet Archive to identify systematic trends in planetary
               properties and to develop a machine learning pipeline capable of predicting
@@ -180,9 +188,9 @@
             </p>
             <ul>
               <li>Statistical analysis and visualisation of archive data using TOPCAT</li>
-              <li>Identification of detection-technique biases in the published parameter distributions</li>
+              <li>Identification of detection-technique biases in published parameter distributions</li>
               <li>Random forest regression model trained on known planetary properties</li>
-              <li>Model successfully fills measurement gaps introduced by detection method limitations</li>
+              <li>Model successfully fills measurement gaps introduced by detection limitations</li>
             </ul>
             <div class="tags-wrap" style="margin-top:1rem">
               <span class="tag">TOPCAT</span>
@@ -201,34 +209,34 @@
   <!-- COLLABORATORS -->
   <section class="section">
     <div class="container">
-      <div class="section-label">Collaborators &amp; Advisors</div>
+      <span class="eyebrow">Collaborators &amp; Advisors</span>
       <h2 class="section-title">People</h2>
 
-      <div class="collaborators-grid">
-        <div class="collaborator-card reveal">
+      <div class="people-grid">
+        <div class="person-card reveal">
           <h3>Dr. Arka Chatterjee</h3>
-          <p class="role">M.Sc. Thesis Advisor</p>
-          <p class="affil">Assistant Professor, Department of Physics<br>UPES Dehradun, Uttarakhand</p>
+          <div class="person-role">M.Sc. Thesis Advisor</div>
+          <div class="person-affil">Assistant Professor, Department of Physics<br>UPES Dehradun, Uttarakhand</div>
         </div>
-        <div class="collaborator-card reveal">
+        <div class="person-card reveal">
           <h3>Dr. Sudip K. Garain</h3>
-          <p class="role">M.Sc. Co-Supervisor</p>
-          <p class="affil">IISER Kolkata</p>
+          <div class="person-role">M.Sc. Co-Supervisor</div>
+          <div class="person-affil">IISER Kolkata</div>
         </div>
-        <div class="collaborator-card reveal">
+        <div class="person-card reveal">
           <h3>Dr. Raju Roychowdhury</h3>
-          <p class="role">Project Collaborator</p>
-          <p class="affil">University of Delhi, Delhi</p>
+          <div class="person-role">Project Collaborator</div>
+          <div class="person-affil">University of Delhi, Delhi</div>
         </div>
-        <div class="collaborator-card reveal">
+        <div class="person-card reveal">
           <h3>Dr. Rashi Jain</h3>
-          <p class="role">B.Sc. Thesis Advisor</p>
-          <p class="affil">University of Southampton, UK</p>
+          <div class="person-role">B.Sc. Thesis Advisor</div>
+          <div class="person-affil">Research Fellow<br>University of Southampton, UK</div>
         </div>
-        <div class="collaborator-card reveal">
+        <div class="person-card reveal">
           <h3>Dr. Prasanta Karmakar</h3>
-          <p class="role">Internship Supervisor</p>
-          <p class="affil">Variable Energy Cyclotron Centre (VECC), Kolkata</p>
+          <div class="person-role">Internship Supervisor</div>
+          <div class="person-affil">Variable Energy Cyclotron Centre (VECC), Kolkata</div>
         </div>
       </div>
     </div>
@@ -241,6 +249,7 @@
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
         <a href="cv.html">CV</a>
       </nav>
       <p class="footer-copy">© 2026 Abhineet Srivastava · UPES Dehradun</p>

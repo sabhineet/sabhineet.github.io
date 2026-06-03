@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications — Abhineet Srivastava</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">Abhineet Srivastava</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html" class="active">Certifications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon" id="themeIcon">☀</span>
+      <span id="themeLabel">Light</span>
+    </button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="research.html" class="mobile-link">Research</a></li>
+      <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="certifications.html" class="mobile-link">Certifications</a></li>
+      <li><a href="cv.html" class="mobile-link">CV</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-inner">
+        <span class="eyebrow">Certifications &amp; Training</span>
+        <h1 class="section-title" style="font-size:clamp(2.2rem,5vw,3.5rem)">
+          Credentials
+        </h1>
+        <p class="section-sub" style="margin-bottom:0">
+          Professional certifications, summer schools, and training programmes
+          spanning data analytics, astrophysics, and gravitational-wave astronomy.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED — GOOGLE DATA ANALYTICS -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--sky)">Featured Certification</span>
+      <h2 class="section-title">Google Data Analytics Professional Certificate</h2>
+      <p class="section-sub">
+        A rigorous 9-course specialisation covering the full data analytics workflow — from
+        spreadsheets and SQL to R, Tableau, and a capstone project.
+        Completed on Coursera, verified by Google.
+      </p>
+
+      <!-- FILTER BUTTONS -->
+      <div class="cert-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+        <button class="filter-btn" data-filter="astrophysics">Astrophysics</button>
+        <button class="filter-btn" data-filter="training">Training / Schools</button>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- ── Google Professional Certificate ── -->
+        <div class="cert-card reveal" data-category="analytics" style="border-color:var(--border-accent);grid-column:1/-1">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p style="font-size:0.88rem;color:var(--muted);line-height:1.65">
+            9-course specialisation: Foundations of Data Analytics, Ask Questions to Make
+            Data-Driven Decisions, Prepare Data for Exploration, Process Data from Dirty to
+            Clean, Analyse Data to Answer Questions, Share Data Through the Art of
+            Visualisation, Data Analysis with R, Data Analytics Capstone Project.
+          </p>
+          <div class="tags-wrap">
+            <span class="tag">SQL</span><span class="tag">R</span><span class="tag">Tableau</span>
+            <span class="tag">Excel</span><span class="tag">BigQuery</span><span class="tag">Data Viz</span>
+            <span class="tag">Case Study</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem;margin-top:auto">
+            <span class="cert-date">Completed 2025</span>
+            <!-- Replace # with your actual Coursera verification URL -->
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Individual course certs — add/edit freely ── -->
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Foundations: Data, Data, Everywhere</h3>
+          <div class="tags-wrap"><span class="tag">Course 1 of 9</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Ask Questions to Make Data-Driven Decisions</h3>
+          <div class="tags-wrap"><span class="tag">Course 2 of 9</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Prepare Data for Exploration</h3>
+          <div class="tags-wrap"><span class="tag">Course 3 of 9</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Process Data from Dirty to Clean</h3>
+          <div class="tags-wrap"><span class="tag">Course 4 of 9</span><span class="tag">SQL</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Analyse Data to Answer Questions</h3>
+          <div class="tags-wrap"><span class="tag">Course 5 of 9</span><span class="tag">SQL</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Share Data Through the Art of Visualisation</h3>
+          <div class="tags-wrap"><span class="tag">Course 6 of 9</span><span class="tag">Tableau</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Data Analysis with R Programming</h3>
+          <div class="tags-wrap"><span class="tag">Course 7 of 9</span><span class="tag">R</span><span class="tag">ggplot2</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Google · Coursera</span>
+          <h3>Google Data Analytics Capstone</h3>
+          <div class="tags-wrap"><span class="tag">Course 8/9</span><span class="tag">Case Study</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2025</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Astronomy / Coursera ── -->
+        <div class="cert-card reveal" data-category="astrophysics">
+          <span class="cert-org">University of Arizona · Coursera</span>
+          <h3>Astronomy: Exploring Time and Space</h3>
+          <div class="tags-wrap"><span class="tag">Astrophysics</span><span class="tag">Online Course</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2023</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="astrophysics">
+          <span class="cert-org">University of Tokyo · Coursera</span>
+          <h3>From the Big Bang to Dark Energy</h3>
+          <div class="tags-wrap"><span class="tag">Cosmology</span><span class="tag">Online Course</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2023</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-category="astrophysics">
+          <span class="cert-org">Coursera</span>
+          <h3>Python for Data Science</h3>
+          <div class="tags-wrap"><span class="tag">Python</span><span class="tag">Data Science</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">2023</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+
+        <!-- ── Schools / Training ── -->
+        <div class="cert-card reveal" data-category="training">
+          <span class="cert-org">ICTS-TIFR, Bengaluru</span>
+          <h3>Summer School on Gravitational-Wave Astronomy</h3>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.55">
+            Intensive training in gravitational wave detection, data analysis with LIGO/Virgo
+            data, matched filtering, Bayesian inference, and source parameter estimation.
+          </p>
+          <div class="tags-wrap">
+            <span class="tag">GW Astronomy</span><span class="tag">LIGO</span>
+            <span class="tag">Bayesian</span><span class="tag">ICTS-TIFR</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;margin-top:auto">
+            <span class="cert-date">July 2025</span>
+          </div>
+        </div>
+
+        <!-- ── Placeholder for future certs — duplicate and fill in ──
+        <div class="cert-card reveal" data-category="analytics">
+          <span class="cert-org">Organisation · Platform</span>
+          <h3>Certificate Name</h3>
+          <div class="tags-wrap"><span class="tag">Tag</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:auto">
+            <span class="cert-date">Year</span>
+            <a href="VERIFICATION_URL" target="_blank" rel="noopener" class="cert-verify">Verify ↗</a>
+          </div>
+        </div>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO ADD CERTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <span class="eyebrow">For Future Reference</span>
+      <h2 class="section-title" style="font-size:1.4rem">Adding New Certificates</h2>
+      <p style="font-size:0.9rem;color:var(--muted);max-width:600px;line-height:1.8">
+        To add a new certificate, copy the <code style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">.cert-card</code>
+        template from the comment block above and paste it before the closing
+        <code style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">&lt;/div&gt;</code>
+        of <code style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">.cert-grid</code>.
+        Set <code style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">data-category</code>
+        to one of: <strong>analytics</strong>, <strong>astrophysics</strong>, or <strong>training</strong>
+        so the filter buttons work automatically. Replace the <code style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">#</code>
+        href with the actual Coursera/credential verification URL.
+        No other code changes needed.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">Abhineet Srivastava</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <p class="footer-copy">© 2026 Abhineet Srivastava · UPES Dehradun</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

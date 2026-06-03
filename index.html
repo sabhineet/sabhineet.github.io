@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhineet Srivastava — M.Sc. Physics researcher at UPES Dehradun specialising in high-energy astrophysics, X-ray timing, and computational physics." />
   <title>Abhineet Srivastava</title>
   <link rel="stylesheet" href="style.css" />
-  <script>(function(){var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);})();</script>
+  <script>(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -19,10 +20,14 @@
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="projects.html">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
       <li><a href="cv.html">CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-toggle-icon">◐</span><span class="theme-toggle-label">Dark</span></button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon" id="themeIcon">☀</span>
+      <span id="themeLabel">Light</span>
+    </button>
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -34,88 +39,104 @@
       <li><a href="index.html" class="mobile-link">Home</a></li>
       <li><a href="research.html" class="mobile-link">Research</a></li>
       <li><a href="projects.html" class="mobile-link">Projects</a></li>
+      <li><a href="certifications.html" class="mobile-link">Certifications</a></li>
       <li><a href="cv.html" class="mobile-link">CV</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
   </div>
 
-  <!-- HERO -->
+  <!-- ═══════════════════════════════════════
+       HERO — COSMIC
+  ═══════════════════════════════════════ -->
   <section id="hero">
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+
     <div class="hero-inner">
-      <p class="hero-eyebrow">M.Sc. Physics &nbsp;·&nbsp; UPES, Dehradun</p>
+      <div class="hero-status">
+        <span class="hero-status-dot"></span>
+        M.Sc. Physics · UPES Dehradun · 2024–2026
+      </div>
 
-      <h1 class="hero-name">Abhineet<br>Srivastava</h1>
+      <h1 class="hero-name">
+        Abhineet<br><em>Srivastava</em>
+      </h1>
 
-      <p class="hero-desc">
-        My work sits at the intersection of high-energy astrophysics
-        and computational physics — studying stellar-mass black holes
-        through X-ray timing and spectral analysis, and probing
-        stochastic dynamics in classical non-conservative systems.
+      <p class="hero-tagline">
+        Physics researcher at the intersection of high-energy astrophysics
+        and computational methods — studying stellar-mass black holes through
+        X-ray timing and probing stochastic dynamics in non-conservative systems.
       </p>
 
       <p class="hero-meta">Dehradun, India &nbsp;·&nbsp; abhixneet@gmail.com</p>
 
       <div class="hero-cta">
-        <a href="research.html" class="btn btn-primary">Research</a>
+        <a href="research.html" class="btn btn-primary">Research →</a>
         <a href="cv.html" class="btn btn-outline">Curriculum Vitae</a>
-        <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        <a href="certifications.html" class="btn btn-outline">Certifications</a>
+        <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
         <a href="#contact" class="btn btn-outline">Contact</a>
       </div>
 
-      <!-- Dirac equation — single, subtle, meaningful -->
-      <div class="hero-dirac" aria-label="Dirac equation">
+      <div class="hero-equation" aria-label="Dirac equation">
         (iγ<sup>μ</sup>∂<sub>μ</sub> − m)ψ = 0
-        <span class="hero-dirac-label">Dirac equation — predicting the existence of antimatter, 1928</span>
+        <span class="hero-equation-caption">Dirac equation — predicting antimatter, 1928</span>
       </div>
 
-      <!-- Favourite quote -->
       <blockquote class="hero-quote">
         <p>"And in that moment, we were infinite."</p>
         <cite>— The Perks of Being a Wallflower</cite>
       </blockquote>
     </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-label">About</div>
+      <span class="eyebrow">About</span>
       <div class="about-grid">
         <div class="about-text">
           <p class="about-lead">
-            I am an M.Sc. Physics graduate from <em>UPES, Dehradun</em>, with a
-            focus on high-energy astrophysics and computational methods.
+            I am an M.Sc. Physics graduate student at <em>UPES, Dehradun</em>,
+            focusing on high-energy astrophysics and computational methods.
           </p>
           <p>
-            My graduate thesis examined disk-corona-jet connections in stellar-mass
+            My graduate thesis examines disk-corona-jet connections in stellar-mass
             black holes using NuSTAR X-ray data — analysing light curves, time lags,
-            and power density spectra. Concurrently, I collaborated with the
-            University of Delhi on the stochastic dynamics of Brownian motion in
-            non-conservative potentials, combining Green's function analysis with
-            Monte Carlo simulation.
+            and power density spectra to probe the physical geometry of accretion
+            systems. Concurrently, I collaborate with the University of Delhi on
+            Brownian motion in non-conservative potentials, combining Green's function
+            analysis with Monte Carlo simulation.
           </p>
           <p>
-            Earlier, a summer internship at the Variable Energy Cyclotron Centre
-            (VECC), Kolkata gave me hands-on experience with ECR ion sources and
-            ion beam implantation on silicon substrates. My undergraduate thesis
-            applied random forest machine learning to the NASA Exoplanet Archive to
-            predict unmeasured planetary properties.
+            A summer internship at the Variable Energy Cyclotron Centre (VECC), Kolkata
+            gave me hands-on experience with ECR ion sources and ion beam implantation
+            on silicon substrates. My undergraduate thesis applied random forest
+            machine learning to the NASA Exoplanet Archive to predict unmeasured
+            planetary properties.
           </p>
           <p>
             I maintain an open-source
             <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener">Computational Physics Library</a>
-            for students and researchers, and co-founded the Horizon Science Society
-            at UPES.
+            for students and researchers, and co-founded the Horizon Science Society at UPES.
+            I have also completed the <strong>Google Data Analytics Professional Certificate</strong>
+            (9-course specialisation), building skills in SQL, R, Tableau, and data storytelling.
           </p>
-          <div class="about-links">
+          <div class="about-cta">
             <a href="research.html" class="btn btn-outline" style="font-size:0.78rem">Research →</a>
-            <a href="projects.html" class="btn btn-outline" style="font-size:0.78rem">Projects →</a>
+            <a href="certifications.html" class="btn btn-outline" style="font-size:0.78rem">Certifications →</a>
             <a href="cv.html" class="btn btn-outline" style="font-size:0.78rem">Full CV →</a>
           </div>
         </div>
 
-        <div class="about-details reveal">
-          <div class="detail-block">
+        <div class="about-details stagger reveal">
+          <div class="detail-card">
             <h3>Education</h3>
             <ul>
               <li>M.Sc. Physics — UPES, Dehradun (2024–2026)</li>
@@ -123,7 +144,7 @@
               <li>Class XII CBSE — B.B.L. Public School, Bareilly</li>
             </ul>
           </div>
-          <div class="detail-block">
+          <div class="detail-card">
             <h3>Research Interests</h3>
             <ul>
               <li>Black hole accretion physics</li>
@@ -133,11 +154,12 @@
               <li>Computational astrophysics &amp; ML in astronomy</li>
             </ul>
           </div>
-          <div class="detail-block">
-            <h3>Training</h3>
+          <div class="detail-card">
+            <h3>Training &amp; Schools</h3>
             <ul>
-              <li>Summer School on Gravitational-Wave Astronomy</li>
-              <li>ICTS-TIFR, Bengaluru — July 2025</li>
+              <li>Summer School on Gravitational-Wave Astronomy<br>
+                <span style="font-size:0.8rem;color:var(--dim)">ICTS-TIFR, Bengaluru · July 2025</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -145,15 +167,17 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
   <section id="skills" class="section section-alt">
     <div class="container">
-      <div class="section-label">Technical Skills</div>
+      <span class="eyebrow">Technical Skills</span>
       <h2 class="section-title">Toolkit</h2>
 
-      <div class="skills-columns">
-        <div class="skill-col reveal">
-          <h3>Programming</h3>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-head">Programming</div>
           <ul>
             <li>Python</li>
             <li>C++</li>
@@ -162,47 +186,75 @@
             <li>LaTeX</li>
           </ul>
         </div>
-
-        <div class="skill-col reveal">
-          <h3>Astronomy &amp; Analysis</h3>
+        <div class="skill-group">
+          <div class="skill-group-head">Astronomy &amp; Analysis</div>
           <ul>
             <li>HEASARC / HEASoft</li>
-            <li>TOPCAT</li>
-            <li>Aladin / iSpec</li>
+            <li>TOPCAT · Aladin · iSpec</li>
             <li>Gnuplot / Origin</li>
             <li>SRIM</li>
+            <li>Astropy</li>
           </ul>
         </div>
-
-        <div class="skill-col reveal">
-          <h3>Methods &amp; Platforms</h3>
+        <div class="skill-group">
+          <div class="skill-group-head">Methods</div>
           <ul>
             <li>X-ray timing &amp; spectral analysis</li>
             <li>Monte Carlo simulation</li>
             <li>Random Forest (scikit-learn)</li>
             <li>Green's function methods</li>
-            <li>GitHub · Linux · Overleaf</li>
+            <li>Fourier analysis / PDS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head">Data Analytics</div>
+          <ul>
+            <li>SQL (BigQuery, PostgreSQL)</li>
+            <li>R (tidyverse, ggplot2)</li>
+            <li>Tableau</li>
+            <li>Excel / Spreadsheets</li>
+            <li>Data cleaning &amp; storytelling</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head">Platforms</div>
+          <ul>
+            <li>GitHub · Git</li>
+            <li>Linux · Bash</li>
+            <li>Overleaf</li>
+            <li>Jupyter Notebooks</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head">Libraries</div>
+          <ul>
+            <li>NumPy · SciPy · Pandas</li>
+            <li>Matplotlib · Seaborn</li>
+            <li>scikit-learn</li>
+            <li>Astropy · Stingray</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RESEARCH PREVIEW -->
+  <!-- ═══════════════════════════════════════
+       RESEARCH PREVIEW
+  ═══════════════════════════════════════ -->
   <section id="research-preview" class="section">
     <div class="container">
-      <div class="section-label">Research</div>
-      <h2 class="section-title">Current Work</h2>
+      <span class="eyebrow">Current Work</span>
+      <h2 class="section-title">Research</h2>
 
       <div class="research-list">
         <div class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Aug 2025 – Present</span>
-            <span class="research-type">M.Sc. Thesis</span>
+          <div class="r-meta">
+            <span class="r-period">Aug 2025 – Present</span>
+            <span class="r-type">M.Sc. Thesis</span>
           </div>
-          <div class="research-body">
+          <div class="r-body">
             <h3>Disk-Corona-Jet Connections in Stellar-Mass Black Holes</h3>
-            <p class="supervisor">Dr. Arka Chatterjee (UPES) · Dr. Sudip K. Garain (IISER Kolkata)</p>
+            <p class="r-supervisor">Dr. Arka Chatterjee (UPES) · Dr. Sudip K. Garain (IISER Kolkata)</p>
             <p>
               Utilising NuSTAR X-ray observations to analyse light curves, time lags,
               and power density spectra, probing the physical relationship between the
@@ -212,106 +264,206 @@
               <span class="tag">NuSTAR</span>
               <span class="tag">X-ray Timing</span>
               <span class="tag">HEASARC</span>
+              <span class="tag">Power Density Spectra</span>
               <span class="tag">Python</span>
             </div>
           </div>
         </div>
 
         <div class="research-item reveal">
-          <div class="research-meta">
-            <span class="research-period">Aug 2025 – Present</span>
-            <span class="research-type">External Project</span>
+          <div class="r-meta">
+            <span class="r-period">Aug 2025 – Present</span>
+            <span class="r-type">External Project</span>
           </div>
-          <div class="research-body">
+          <div class="r-body">
             <h3>Stochastic Dynamics of Brownian Motion</h3>
-            <p class="supervisor">Dr. Raju Roychowdhury (University of Delhi)</p>
+            <p class="r-supervisor">Dr. Raju Roychowdhury (University of Delhi)</p>
             <p>
               Investigating Brownian motion dynamics in classical non-conservative
-              systems, combining Green's function analysis for analytical behaviour
-              with Monte Carlo simulations for stochastic modelling and statistical
-              characterisation.
+              systems, combining Green's function analysis with Monte Carlo simulations
+              for stochastic modelling and statistical characterisation.
             </p>
             <div class="tags-wrap">
               <span class="tag">Green's Functions</span>
               <span class="tag">Monte Carlo</span>
+              <span class="tag">Langevin Dynamics</span>
               <span class="tag">Python</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div style="margin-top:2.5rem;">
+      <div style="margin-top:2.5rem">
         <a href="research.html" class="btn btn-outline">All Research →</a>
       </div>
     </div>
   </section>
 
-  <!-- OPEN SOURCE -->
-  <section id="library" class="section section-alt">
+  <!-- ═══════════════════════════════════════
+       DATA ANALYTICS (NEW)
+  ═══════════════════════════════════════ -->
+  <section id="analytics" class="section section-alt">
     <div class="container">
-      <div class="section-label">Open Source</div>
-      <h2 class="section-title">Computational Physics Library</h2>
+      <span class="eyebrow" style="color:var(--sky)">Data Analytics</span>
+      <h2 class="section-title">Analytics &amp; Data Science</h2>
       <p class="section-sub">
-        An open-source collection of numerical methods, physics simulators,
-        and data analysis tools for students and researchers.
+        Bridging physics and industry — certified in the full Google Data Analytics
+        specialisation, with projects spanning SQL, R, Tableau, and Python.
       </p>
-      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-        <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="btn btn-primary">Visit Library</a>
-        <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+
+      <!-- Google cert highlight -->
+      <div class="cert-card reveal" style="max-width:520px;margin-bottom:2.5rem;border-color:var(--border-accent)">
+        <span class="cert-org">Google · Coursera · 2025</span>
+        <h3>Google Data Analytics Professional Certificate</h3>
+        <p style="font-size:0.88rem;color:var(--muted);line-height:1.6">
+          9-course specialisation covering the complete data analytics workflow — from
+          data cleaning and SQL querying to R visualisation, Tableau dashboards, and
+          capstone case studies.
+        </p>
+        <div class="tags-wrap">
+          <span class="tag">SQL</span>
+          <span class="tag">R</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Data Viz</span>
+          <span class="tag">BigQuery</span>
+        </div>
+        <a href="certifications.html" class="cert-verify">View Certificates ↗</a>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="analytics-card reveal">
+          <div class="analytics-card-header">
+            <span class="eyebrow" style="color:var(--sky)">SQL · Python</span>
+            <h3>Exoplanet Data Pipeline</h3>
+          </div>
+          <div class="analytics-card-body">
+            <p>
+              Statistical analysis and data cleaning of the NASA Exoplanet Archive —
+              joining multiple catalogue tables, handling missing values, and producing
+              publication-quality visualisations of parameter distributions.
+            </p>
+            <div class="tags-wrap">
+              <span class="tag">TOPCAT</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-card reveal">
+          <div class="analytics-card-header">
+            <span class="eyebrow" style="color:var(--sky)">R · ggplot2</span>
+            <h3>Astrophysical Data Visualisation</h3>
+          </div>
+          <div class="analytics-card-body">
+            <p>
+              Producing high-quality scientific figures from NuSTAR FITS data — light
+              curves, hardness-intensity diagrams, and power density spectral plots for
+              thesis and publication.
+            </p>
+            <div class="tags-wrap">
+              <span class="tag">R</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">HEASoft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2.5rem">
+        <a href="certifications.html" class="btn btn-outline" style="border-color:var(--sky);color:var(--sky)">All Certifications →</a>
+        <a href="projects.html" class="btn btn-ghost" style="margin-left:1rem">View Projects →</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
+  <!-- ═══════════════════════════════════════
+       OPEN SOURCE
+  ═══════════════════════════════════════ -->
+  <section id="library" class="section">
     <div class="container">
-      <div class="section-label">Contact</div>
+      <span class="eyebrow">Open Source</span>
+      <h2 class="section-title">Computational Physics Library</h2>
+      <p class="section-sub">
+        An open-source collection of numerical methods, physics simulators,
+        and data analysis tools for students and researchers — documented and
+        version-controlled on GitHub.
+      </p>
+
+      <div class="library-feature reveal">
+        <div class="library-feature-header">
+          <div>
+            <h3>sabhineet.github.io/computational-physics-library</h3>
+            <p>Classical mechanics · Quantum mechanics · Electromagnetism · Astrophysics</p>
+          </div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap;">
+            <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="btn btn-primary">Open Library ↗</a>
+            <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="btn btn-outline">Source</a>
+          </div>
+        </div>
+        <div class="library-iframe-wrap">
+          <iframe
+            src="https://sabhineet.github.io/computational-physics-library/"
+            title="Computational Physics Library"
+            class="library-iframe"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups"
+          ></iframe>
+          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="iframe-link-overlay">Open in full tab ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
       <h2 class="section-title">Get in Touch</h2>
       <p class="section-sub">
-        Open to research collaborations, internships, and discussions in
-        computational astrophysics and physics.
+        Open to research collaborations, PhD opportunities, internships, and
+        discussions in computational astrophysics, physics, and data analytics.
       </p>
 
       <div class="contact-grid">
-        <div class="contact-list">
-          <a href="mailto:abhixneet@gmail.com" class="contact-item reveal">
-            <div>
-              <span class="contact-type">Email</span>
-              <span class="contact-value">abhixneet@gmail.com</span>
-            </div>
+        <div class="contact-links reveal">
+          <a href="mailto:abhixneet@gmail.com" class="contact-row">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">abhixneet@gmail.com</span>
+            <span class="contact-arrow">→</span>
           </a>
-          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="contact-item reveal">
-            <div>
-              <span class="contact-type">GitHub</span>
-              <span class="contact-value">github.com/sabhineet</span>
-            </div>
+          <a href="https://github.com/sabhineet" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/sabhineet</span>
+            <span class="contact-arrow">→</span>
           </a>
-          <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="contact-item reveal">
-            <div>
-              <span class="contact-type">LinkedIn</span>
-              <span class="contact-value">linkedin.com/in/abhineet-srivastava-</span>
-            </div>
+          <a href="https://www.linkedin.com/in/abhineet-srivastava-/" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">in/abhineet-srivastava-</span>
+            <span class="contact-arrow">→</span>
           </a>
-          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="contact-item reveal">
-            <div>
-              <span class="contact-type">Physics Library</span>
-              <span class="contact-value">sabhineet.github.io/computational-physics-library</span>
-            </div>
+          <a href="https://sabhineet.github.io/computational-physics-library/" target="_blank" rel="noopener" class="contact-row">
+            <span class="contact-label">Library</span>
+            <span class="contact-value">sabhineet.github.io/computational-physics-library</span>
+            <span class="contact-arrow">→</span>
           </a>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form reveal">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" />
+            <input type="text" id="name" placeholder="Your name" autocomplete="name" />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="your@email.com" />
+            <input type="email" id="email" placeholder="your@email.com" autocomplete="email" />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Research collaboration, questions…"></textarea>
+            <textarea id="message" rows="5" placeholder="Research collaboration, PhD inquiry, data analytics…"></textarea>
           </div>
           <button class="btn btn-primary" id="sendBtn" style="width:100%;justify-content:center;">Send Message</button>
           <div id="formFeedback" class="form-feedback"></div>
@@ -327,6 +479,7 @@
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
         <a href="cv.html">CV</a>
       </nav>
       <p class="footer-copy">© 2026 Abhineet Srivastava · UPES Dehradun</p>
